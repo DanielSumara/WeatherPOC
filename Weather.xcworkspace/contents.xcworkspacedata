@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:Frameworks"
+      name = "Frameworks">
+      <FileRef
+         location = "group:Business/Business.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:DataRepository/DataRepository.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:DomainModels/DomainModels.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Resources/Resources.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:RestService/RestService.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Utilities/Utilities.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:WeatherFlow/WeatherFlow.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:WeatherKit/WeatherKit.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Apps/Weather/Weather.xcodeproj">
    </FileRef>

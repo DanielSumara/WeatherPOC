@@ -7,6 +7,7 @@
 //
 
 import Business
+import DataRepository
 import Foundation
 import UIKit
 
@@ -15,6 +16,7 @@ public final class DashboardFlow: ModuleFlow {
     // MARK: - Properties
     
     private let presenter: Presenter
+    private let repository: WeatherRepository
     
     private var childFlow: ModuleFlow? {
         didSet {
@@ -25,14 +27,15 @@ public final class DashboardFlow: ModuleFlow {
     
     // MARK: - Initializers
     
-    public init(using presenter: Presenter) {
+    public init(using presenter: Presenter, _ repository: WeatherRepository) {
         self.presenter = presenter
+        self.repository = repository
     }
     
     // MARK: - API
     
     public func start() {
-        let screen = DashboardScreen()
+        let screen = DashboardScreen(repository: repository)
         presenter.push(screen)
         
         presenter.observeAppearance(of: screen, on: self) { flow in flow.childFlow = nil }

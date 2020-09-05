@@ -23,7 +23,7 @@
 		092590AC250379D400034515 /* DashboardFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590AB250379D400034515 /* DashboardFlow.swift */; };
 		092590B0250379ED00034515 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590AF250379ED00034515 /* DashboardScreen.swift */; };
 		092590B825037B4700034515 /* ViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590B725037B4700034515 /* ViewContent.swift */; };
-		092590BA25037B8C00034515 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590B925037B8C00034515 /* Forecast.swift */; };
+		092590BA25037B8C00034515 /* ForecastProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590B925037B8C00034515 /* ForecastProjection.swift */; };
 		092590C925037E4B00034515 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590C825037E4B00034515 /* DashboardViewController.swift */; };
 		092590CB25037E5500034515 /* DashboardViewController+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590CA25037E5500034515 /* DashboardViewController+ContentView.swift */; };
 		092590CD25037FE800034515 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590CC25037FE800034515 /* DashboardViewModel.swift */; };
@@ -38,6 +38,10 @@
 		0925910D2503870D00034515 /* WeatherKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925910B2503870D00034515 /* WeatherKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0925914D25039EAA00034515 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0925914C25039EAA00034515 /* Extensions.framework */; };
 		0925914E25039EAA00034515 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925914C25039EAA00034515 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0925918D2503AC8600034515 /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918C2503AC8600034515 /* DataRepository.framework */; };
+		0925918E2503AC8600034515 /* DataRepository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918C2503AC8600034515 /* DataRepository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		092591902503AC8B00034515 /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918F2503AC8B00034515 /* DomainModels.framework */; };
+		092591912503AC8B00034515 /* DomainModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918F2503AC8B00034515 /* DomainModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,8 @@
 			files = (
 				09259101250383EF00034515 /* Utilities.framework in Embed Frameworks */,
 				0925910D2503870D00034515 /* WeatherKit.framework in Embed Frameworks */,
+				092591912503AC8B00034515 /* DomainModels.framework in Embed Frameworks */,
+				0925918E2503AC8600034515 /* DataRepository.framework in Embed Frameworks */,
 				09259105250383F300034515 /* ViewLayout.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -114,7 +120,7 @@
 		092590AB250379D400034515 /* DashboardFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFlow.swift; sourceTree = "<group>"; };
 		092590AF250379ED00034515 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		092590B725037B4700034515 /* ViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContent.swift; sourceTree = "<group>"; };
-		092590B925037B8C00034515 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		092590B925037B8C00034515 /* ForecastProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastProjection.swift; sourceTree = "<group>"; };
 		092590C825037E4B00034515 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		092590CA25037E5500034515 /* DashboardViewController+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+ContentView.swift"; sourceTree = "<group>"; };
 		092590CC25037FE800034515 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
@@ -125,6 +131,8 @@
 		09259103250383F300034515 /* ViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0925910B2503870D00034515 /* WeatherKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatherKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0925914C25039EAA00034515 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0925918C2503AC8600034515 /* DataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0925918F2503AC8B00034515 /* DomainModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,8 @@
 			files = (
 				09259100250383EF00034515 /* Utilities.framework in Frameworks */,
 				0925910C2503870D00034515 /* WeatherKit.framework in Frameworks */,
+				092591902503AC8B00034515 /* DomainModels.framework in Frameworks */,
+				0925918D2503AC8600034515 /* DataRepository.framework in Frameworks */,
 				09259104250383F300034515 /* ViewLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +295,8 @@
 		092590542503781200034515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0925918F2503AC8B00034515 /* DomainModels.framework */,
+				0925918C2503AC8600034515 /* DataRepository.framework */,
 				0925914C25039EAA00034515 /* Extensions.framework */,
 				0925910B2503870D00034515 /* WeatherKit.framework */,
 				09259103250383F300034515 /* ViewLayout.framework */,
@@ -327,7 +339,7 @@
 		092590AD250379D700034515 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				092590B925037B8C00034515 /* Forecast.swift */,
+				092590B925037B8C00034515 /* ForecastProjection.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -582,7 +594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				092590BA25037B8C00034515 /* Forecast.swift in Sources */,
+				092590BA25037B8C00034515 /* ForecastProjection.swift in Sources */,
 				092590D12503800600034515 /* DashboardModel.swift in Sources */,
 				092590B0250379ED00034515 /* DashboardScreen.swift in Sources */,
 				092590C925037E4B00034515 /* DashboardViewController.swift in Sources */,

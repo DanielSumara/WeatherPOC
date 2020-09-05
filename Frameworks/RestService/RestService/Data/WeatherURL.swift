@@ -20,7 +20,7 @@ struct WeatherURL {
         var components = URLComponents()
         components.scheme = "https"
         components.host = "api.openweathermap.org"
-        components.path = "data/2.5/weather"
+        components.path = "/data/2.5/weather"
         components.queryItems = [
             URLQueryItem(name: "q", value: query),
             URLQueryItem(name: "appid", value: "b7eb1a20abc4db3acb62dc734cdb9f43"),

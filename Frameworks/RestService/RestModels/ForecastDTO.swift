@@ -13,7 +13,7 @@ public struct ForecastDTO: Decodable {
     // MARK: - Properties
     
     public let coordinates: CoordinatesDTO
-    public let weather: WeatherDTO
+    public let weather: [WeatherDTO]
     public let main: MainDTO
     
     public let wind: WindDTO?

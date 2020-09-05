@@ -1,6 +1,6 @@
 //
-//  ServiceError.swift
-//  RestModels
+//  Clouds.swift
+//  DomainModels
 //
 //  Created by Daniel Sumara on 05/09/2020.
 //  Copyright © 2020 Daniel Sumara. All rights reserved.
@@ -8,12 +8,16 @@
 
 import Foundation
 
-public struct ServiceError: Decodable, LocalizedError {
+public struct Clouds {
     
     // MARK: - Properties
     
-    public let message: String
+    public let all: UInt
     
-    public var errorDescription: String? { message }
+    // MARK: - Initializers
+    
+    public init(all: UInt) {
+        self.all = all
+    }
     
 }

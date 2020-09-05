@@ -40,7 +40,12 @@ final class DefaultDashboardViewModel: DashboardViewModel {
     // MARK: - API
     
     func getForecast() {
-        print(#function)
+        model.getForecastForUserRegion { (result) in
+            switch result {
+            case let .success(forecast): print(forecast)
+            case let .failure(error): print(error)
+            }
+        }
     }
     
 }

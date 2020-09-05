@@ -8,6 +8,8 @@
 
 import Business
 import Dashboard
+import RestService
+import DataRepository
 import Foundation
 import UIKit
 
@@ -34,7 +36,10 @@ public final class AppCoordinator {
         let presenter = DefaultPresenter()
         window.rootViewController = presenter.viewController
         
-        mainFlow = DashboardFlow(using: presenter)
+        let service = DefaultWeatherService()
+        let repository = DefaultWeatherRepository(restService: service)
+        
+        mainFlow = DashboardFlow(using: presenter, repository)
         mainFlow?.start()
     }
     

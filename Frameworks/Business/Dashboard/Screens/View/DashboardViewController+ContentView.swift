@@ -53,7 +53,7 @@ extension DashboardViewController {
         
         // MARK: - Methods
         
-        private func bind(with forecast: Forecast) {
+        private func bind(with forecast: ForecastProjection) {
             
         }
         

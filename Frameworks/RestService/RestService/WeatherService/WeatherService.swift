@@ -10,12 +10,9 @@ import Foundation
 import RestModels
 
 public protocol WeatherService: AnyObject {
-    
+
     // MARK: - API
-    
+
     func getForecast(for place: String, then completion: @escaping (Result<ForecastDTO, WeatherServiceError>) -> Void)
-    
+
 }
-
-
-

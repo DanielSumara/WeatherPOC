@@ -25,6 +25,7 @@ public final class DefaultWeatherService: WeatherService {
     
     public convenience init() {
         let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         self.init(networkSession: DefaultNetworkSession(using: .shared), decoder: decoder)
     }
     

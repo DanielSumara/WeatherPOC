@@ -7,6 +7,7 @@
 //
 
 import Business
+import DataRepository
 import Foundation
 import UIKit
 
@@ -18,8 +19,8 @@ final class DashboardScreen: Screen {
     
     // MARK: - Initializers
     
-    init() {
-        let model = DefaultDashboardModel(locale: .current)
+    init(repository: WeatherRepository) {
+        let model = DefaultDashboardModel(repository: repository, locale: .current)
         let viewModel = DefaultDashboardViewModel(model: model)
         viewController = DashboardViewController(using: viewModel)
     }

@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0904FF5325010A2A00F1A5B5 /* DomainModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0904FF5125010A2A00F1A5B5 /* DomainModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		092591582503A3F500034515 /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591572503A3F500034515 /* Clouds.swift */; };
+		0925915A2503A3FE00034515 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591592503A3FE00034515 /* Coordinates.swift */; };
+		0925915C2503A40500034515 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925915B2503A40500034515 /* Forecast.swift */; };
+		0925915E2503A40A00034515 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925915D2503A40A00034515 /* Main.swift */; };
+		092591602503A41200034515 /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925915F2503A41200034515 /* Rain.swift */; };
+		092591622503A41A00034515 /* Snow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591612503A41A00034515 /* Snow.swift */; };
+		092591642503A41F00034515 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591632503A41F00034515 /* System.swift */; };
+		092591662503A42600034515 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591652503A42600034515 /* Weather.swift */; };
+		092591682503A42B00034515 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591672503A42B00034515 /* Wind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0904FF4E25010A2A00F1A5B5 /* DomainModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0904FF5125010A2A00F1A5B5 /* DomainModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainModels.h; sourceTree = "<group>"; };
 		0904FF5225010A2A00F1A5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		092591572503A3F500034515 /* Clouds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
+		092591592503A3FE00034515 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		0925915B2503A40500034515 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		0925915D2503A40A00034515 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		0925915F2503A41200034515 /* Rain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
+		092591612503A41A00034515 /* Snow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snow.swift; sourceTree = "<group>"; };
+		092591632503A41F00034515 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		092591652503A42600034515 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		092591672503A42B00034515 /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +64,27 @@
 		0904FF5025010A2A00F1A5B5 /* DomainModels */ = {
 			isa = PBXGroup;
 			children = (
+				092591572503A3F500034515 /* Clouds.swift */,
+				092591592503A3FE00034515 /* Coordinates.swift */,
+				0925915B2503A40500034515 /* Forecast.swift */,
+				0925915D2503A40A00034515 /* Main.swift */,
+				0925915F2503A41200034515 /* Rain.swift */,
+				092591612503A41A00034515 /* Snow.swift */,
+				092591632503A41F00034515 /* System.swift */,
+				092591652503A42600034515 /* Weather.swift */,
+				092591672503A42B00034515 /* Wind.swift */,
+				092591562503A3DE00034515 /* SupportingFiles */,
+			);
+			path = DomainModels;
+			sourceTree = "<group>";
+		};
+		092591562503A3DE00034515 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				0904FF5125010A2A00F1A5B5 /* DomainModels.h */,
 				0904FF5225010A2A00F1A5B5 /* Info.plist */,
 			);
-			path = DomainModels;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +130,7 @@
 				TargetAttributes = {
 					0904FF4D25010A2A00F1A5B5 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -131,6 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092591582503A3F500034515 /* Clouds.swift in Sources */,
+				092591642503A41F00034515 /* System.swift in Sources */,
+				092591682503A42B00034515 /* Wind.swift in Sources */,
+				0925915C2503A40500034515 /* Forecast.swift in Sources */,
+				0925915E2503A40A00034515 /* Main.swift in Sources */,
+				092591602503A41200034515 /* Rain.swift in Sources */,
+				092591622503A41A00034515 /* Snow.swift in Sources */,
+				092591662503A42600034515 /* Weather.swift in Sources */,
+				0925915A2503A3FE00034515 /* Coordinates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +305,7 @@
 		0904FF5725010A2A00F1A5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -276,6 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.DomainModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +331,7 @@
 		0904FF5825010A2A00F1A5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;

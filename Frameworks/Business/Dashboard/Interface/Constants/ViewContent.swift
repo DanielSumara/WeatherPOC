@@ -11,6 +11,6 @@ import Foundation
 enum ViewContent {
     
     case loading
-    case weather(Forecast)
+    case weather(ForecastProjection)
     
 }

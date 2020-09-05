@@ -1,5 +1,5 @@
 //
-//  Forecast.swift
+//  ForecastProjection.swift
 //  Dashboard
 //
 //  Created by Daniel Sumara on 05/09/2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Forecast {
+struct ForecastProjection {
     
     
     

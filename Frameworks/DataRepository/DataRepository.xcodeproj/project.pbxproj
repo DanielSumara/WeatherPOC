@@ -10,6 +10,19 @@
 		0904FF6D25010A4100F1A5B5 /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0904FF6325010A4100F1A5B5 /* DataRepository.framework */; };
 		0904FF7225010A4100F1A5B5 /* DataRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904FF7125010A4100F1A5B5 /* DataRepositoryTests.swift */; };
 		0904FF7425010A4100F1A5B5 /* DataRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 0904FF6625010A4100F1A5B5 /* DataRepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0925916F2503A80B00034515 /* WeatherRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925916E2503A80B00034515 /* WeatherRepositoryError.swift */; };
+		092591712503A83100034515 /* TransportToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591702503A83100034515 /* TransportToDomainMapper.swift */; };
+		092591732503A83C00034515 /* DefaultTransportToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591722503A83C00034515 /* DefaultTransportToDomainMapper.swift */; };
+		092591792503A89B00034515 /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591752503A89B00034515 /* DomainModels.framework */; };
+		0925917A2503A89B00034515 /* DomainModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591752503A89B00034515 /* DomainModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0925917B2503A89B00034515 /* RestModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591762503A89B00034515 /* RestModels.framework */; };
+		0925917C2503A89B00034515 /* RestModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591762503A89B00034515 /* RestModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0925917D2503A89B00034515 /* RestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591772503A89B00034515 /* RestService.framework */; };
+		0925917E2503A89B00034515 /* RestService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591772503A89B00034515 /* RestService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0925917F2503A89B00034515 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591782503A89B00034515 /* Extensions.framework */; };
+		092591802503A89B00034515 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591782503A89B00034515 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		092591832503AA6600034515 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591822503AA6600034515 /* WeatherRepository.swift */; };
+		092591852503AA8E00034515 /* DefaultWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591842503AA8E00034515 /* DefaultWeatherRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +35,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		092591812503A89C00034515 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				092591802503A89B00034515 /* Extensions.framework in Embed Frameworks */,
+				0925917C2503A89B00034515 /* RestModels.framework in Embed Frameworks */,
+				0925917E2503A89B00034515 /* RestService.framework in Embed Frameworks */,
+				0925917A2503A89B00034515 /* DomainModels.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0904FF6325010A4100F1A5B5 /* DataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0904FF6625010A4100F1A5B5 /* DataRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataRepository.h; sourceTree = "<group>"; };
@@ -29,6 +59,15 @@
 		0904FF6C25010A4100F1A5B5 /* DataRepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataRepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0904FF7125010A4100F1A5B5 /* DataRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryTests.swift; sourceTree = "<group>"; };
 		0904FF7325010A4100F1A5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0925916E2503A80B00034515 /* WeatherRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryError.swift; sourceTree = "<group>"; };
+		092591702503A83100034515 /* TransportToDomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportToDomainMapper.swift; sourceTree = "<group>"; };
+		092591722503A83C00034515 /* DefaultTransportToDomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTransportToDomainMapper.swift; sourceTree = "<group>"; };
+		092591752503A89B00034515 /* DomainModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		092591762503A89B00034515 /* RestModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RestModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		092591772503A89B00034515 /* RestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		092591782503A89B00034515 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		092591822503AA6600034515 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		092591842503AA8E00034515 /* DefaultWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWeatherRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +75,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0925917F2503A89B00034515 /* Extensions.framework in Frameworks */,
+				0925917B2503A89B00034515 /* RestModels.framework in Frameworks */,
+				0925917D2503A89B00034515 /* RestService.framework in Frameworks */,
+				092591792503A89B00034515 /* DomainModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +99,7 @@
 				0904FF6525010A4100F1A5B5 /* DataRepository */,
 				0904FF7025010A4100F1A5B5 /* DataRepositoryTests */,
 				0904FF6425010A4100F1A5B5 /* Products */,
+				092591742503A89B00034515 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +115,10 @@
 		0904FF6525010A4100F1A5B5 /* DataRepository */ = {
 			isa = PBXGroup;
 			children = (
-				0904FF6625010A4100F1A5B5 /* DataRepository.h */,
-				0904FF6725010A4100F1A5B5 /* Info.plist */,
+				0925916C2503A7F300034515 /* Errors */,
+				0925916D2503A7F600034515 /* Infrastructure */,
+				092591692503A7C500034515 /* SupportingFiles */,
+				0925916B2503A7E400034515 /* WeatherRepository */,
 			);
 			path = DataRepository;
 			sourceTree = "<group>";
@@ -84,6 +130,52 @@
 				0904FF7325010A4100F1A5B5 /* Info.plist */,
 			);
 			path = DataRepositoryTests;
+			sourceTree = "<group>";
+		};
+		092591692503A7C500034515 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0904FF6625010A4100F1A5B5 /* DataRepository.h */,
+				0904FF6725010A4100F1A5B5 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0925916B2503A7E400034515 /* WeatherRepository */ = {
+			isa = PBXGroup;
+			children = (
+				092591822503AA6600034515 /* WeatherRepository.swift */,
+				092591842503AA8E00034515 /* DefaultWeatherRepository.swift */,
+			);
+			path = WeatherRepository;
+			sourceTree = "<group>";
+		};
+		0925916C2503A7F300034515 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				0925916E2503A80B00034515 /* WeatherRepositoryError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		0925916D2503A7F600034515 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				092591722503A83C00034515 /* DefaultTransportToDomainMapper.swift */,
+				092591702503A83100034515 /* TransportToDomainMapper.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		092591742503A89B00034515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				092591752503A89B00034515 /* DomainModels.framework */,
+				092591762503A89B00034515 /* RestModels.framework */,
+				092591772503A89B00034515 /* RestService.framework */,
+				092591782503A89B00034515 /* Extensions.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +200,7 @@
 				0904FF5F25010A4100F1A5B5 /* Sources */,
 				0904FF6025010A4100F1A5B5 /* Frameworks */,
 				0904FF6125010A4100F1A5B5 /* Resources */,
+				092591812503A89C00034515 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +241,7 @@
 				TargetAttributes = {
 					0904FF6225010A4100F1A5B5 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 					0904FF6B25010A4100F1A5B5 = {
 						CreatedOnToolsVersion = 11.7;
@@ -195,6 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092591852503AA8E00034515 /* DefaultWeatherRepository.swift in Sources */,
+				092591732503A83C00034515 /* DefaultTransportToDomainMapper.swift in Sources */,
+				0925916F2503A80B00034515 /* WeatherRepositoryError.swift in Sources */,
+				092591832503AA6600034515 /* WeatherRepository.swift in Sources */,
+				092591712503A83100034515 /* TransportToDomainMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +439,7 @@
 		0904FF7825010A4100F1A5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -356,6 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.DataRepository;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +465,7 @@
 		0904FF7925010A4100F1A5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -388,6 +490,7 @@
 		0904FF7B25010A4100F1A5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = DataRepositoryTests/Info.plist;
@@ -406,6 +509,7 @@
 		0904FF7C25010A4100F1A5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = DataRepositoryTests/Info.plist;

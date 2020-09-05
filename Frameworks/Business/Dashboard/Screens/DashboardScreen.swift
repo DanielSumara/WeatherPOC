@@ -19,8 +19,9 @@ final class DashboardScreen: Screen {
     // MARK: - Initializers
     
     init() {
-        viewController = UIViewController()
-        viewController.title = "some"
+        let model = DefaultDashboardModel(locale: .current)
+        let viewModel = DefaultDashboardViewModel(model: model)
+        viewController = DashboardViewController(using: viewModel)
     }
     
 }

@@ -31,6 +31,8 @@
 		092590742503783000034515 /* WeatherKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092590622503783000034515 /* WeatherKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092590932503786100034515 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092590922503786100034515 /* Extensions.framework */; };
 		092590942503786100034515 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092590922503786100034515 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		092590FD250383E300034515 /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092590FC250383E300034515 /* ViewLayout.framework */; };
+		092590FE250383E300034515 /* ViewLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092590FC250383E300034515 /* ViewLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,7 @@
 				092590642503783000034515 /* Business.framework in Embed Frameworks */,
 				092590722503783000034515 /* WeatherFlow.framework in Embed Frameworks */,
 				0925906C2503783000034515 /* Resources.framework in Embed Frameworks */,
+				092590FE250383E300034515 /* ViewLayout.framework in Embed Frameworks */,
 				092590662503783000034515 /* Dashboard.framework in Embed Frameworks */,
 				092590942503786100034515 /* Extensions.framework in Embed Frameworks */,
 				092590702503783000034515 /* Utilities.framework in Embed Frameworks */,
@@ -73,6 +76,7 @@
 		092590612503783000034515 /* WeatherFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatherFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		092590622503783000034515 /* WeatherKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatherKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		092590922503786100034515 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		092590FC250383E300034515 /* ViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 				092590632503783000034515 /* Business.framework in Frameworks */,
 				092590712503783000034515 /* WeatherFlow.framework in Frameworks */,
 				0925906B2503783000034515 /* Resources.framework in Frameworks */,
+				092590FD250383E300034515 /* ViewLayout.framework in Frameworks */,
 				092590652503783000034515 /* Dashboard.framework in Frameworks */,
 				092590932503786100034515 /* Extensions.framework in Frameworks */,
 				0925906F2503783000034515 /* Utilities.framework in Frameworks */,
@@ -144,6 +149,7 @@
 		092590592503783000034515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				092590FC250383E300034515 /* ViewLayout.framework */,
 				092590922503786100034515 /* Extensions.framework */,
 				0925905A2503783000034515 /* Business.framework */,
 				0925905B2503783000034515 /* Dashboard.framework */,

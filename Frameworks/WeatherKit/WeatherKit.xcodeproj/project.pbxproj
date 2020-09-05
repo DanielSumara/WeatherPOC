@@ -10,6 +10,7 @@
 		0904FF9125010A5B00F1A5B5 /* WeatherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0904FF8725010A5B00F1A5B5 /* WeatherKit.framework */; };
 		0904FF9625010A5B00F1A5B5 /* WeatherKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904FF9525010A5B00F1A5B5 /* WeatherKitTests.swift */; };
 		0904FF9825010A5B00F1A5B5 /* WeatherKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0904FF8A25010A5B00F1A5B5 /* WeatherKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0925910A250386F100034515 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09259109250386F100034515 /* TitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0904FF9025010A5B00F1A5B5 /* WeatherKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0904FF9525010A5B00F1A5B5 /* WeatherKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitTests.swift; sourceTree = "<group>"; };
 		0904FF9725010A5B00F1A5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09259109250386F100034515 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +73,8 @@
 		0904FF8925010A5B00F1A5B5 /* WeatherKit */ = {
 			isa = PBXGroup;
 			children = (
-				0904FF8A25010A5B00F1A5B5 /* WeatherKit.h */,
-				0904FF8B25010A5B00F1A5B5 /* Info.plist */,
+				09259108250386D500034515 /* Labels */,
+				09259106250386BE00034515 /* SupportingFiles */,
 			);
 			path = WeatherKit;
 			sourceTree = "<group>";
@@ -84,6 +86,23 @@
 				0904FF9725010A5B00F1A5B5 /* Info.plist */,
 			);
 			path = WeatherKitTests;
+			sourceTree = "<group>";
+		};
+		09259106250386BE00034515 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0904FF8A25010A5B00F1A5B5 /* WeatherKit.h */,
+				0904FF8B25010A5B00F1A5B5 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		09259108250386D500034515 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				09259109250386F100034515 /* TitleLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +167,7 @@
 				TargetAttributes = {
 					0904FF8625010A5B00F1A5B5 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 					0904FF8F25010A5B00F1A5B5 = {
 						CreatedOnToolsVersion = 11.7;
@@ -195,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0925910A250386F100034515 /* TitleLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +361,7 @@
 		0904FF9C25010A5B00F1A5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -356,6 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.WeatherKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +387,7 @@
 		0904FF9D25010A5B00F1A5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -388,6 +412,7 @@
 		0904FF9F25010A5B00F1A5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = WeatherKitTests/Info.plist;
@@ -406,6 +431,7 @@
 		0904FFA025010A5B00F1A5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = WeatherKitTests/Info.plist;

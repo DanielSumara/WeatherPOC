@@ -24,6 +24,18 @@
 		092590B0250379ED00034515 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590AF250379ED00034515 /* DashboardScreen.swift */; };
 		092590B825037B4700034515 /* ViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590B725037B4700034515 /* ViewContent.swift */; };
 		092590BA25037B8C00034515 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590B925037B8C00034515 /* Forecast.swift */; };
+		092590C925037E4B00034515 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590C825037E4B00034515 /* DashboardViewController.swift */; };
+		092590CB25037E5500034515 /* DashboardViewController+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590CA25037E5500034515 /* DashboardViewController+ContentView.swift */; };
+		092590CD25037FE800034515 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590CC25037FE800034515 /* DashboardViewModel.swift */; };
+		092590CF25037FF900034515 /* DefaultDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590CE25037FF900034515 /* DefaultDashboardViewModel.swift */; };
+		092590D12503800600034515 /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590D02503800600034515 /* DashboardModel.swift */; };
+		092590D32503800F00034515 /* DefaultDashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590D22503800F00034515 /* DefaultDashboardModel.swift */; };
+		09259100250383EF00034515 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092590FF250383EF00034515 /* Utilities.framework */; };
+		09259101250383EF00034515 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092590FF250383EF00034515 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09259104250383F300034515 /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09259103250383F300034515 /* ViewLayout.framework */; };
+		09259105250383F300034515 /* ViewLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09259103250383F300034515 /* ViewLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0925910C2503870D00034515 /* WeatherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0925910B2503870D00034515 /* WeatherKit.framework */; };
+		0925910D2503870D00034515 /* WeatherKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925910B2503870D00034515 /* WeatherKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +62,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		09259102250383EF00034515 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09259101250383EF00034515 /* Utilities.framework in Embed Frameworks */,
+				0925910D2503870D00034515 /* WeatherKit.framework in Embed Frameworks */,
+				09259105250383F300034515 /* ViewLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0904FFCF25010AA300F1A5B5 /* Business.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Business.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0904FFD225010AA300F1A5B5 /* Business.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Business.h; sourceTree = "<group>"; };
@@ -74,6 +102,15 @@
 		092590AF250379ED00034515 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		092590B725037B4700034515 /* ViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContent.swift; sourceTree = "<group>"; };
 		092590B925037B8C00034515 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		092590C825037E4B00034515 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		092590CA25037E5500034515 /* DashboardViewController+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+ContentView.swift"; sourceTree = "<group>"; };
+		092590CC25037FE800034515 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		092590CE25037FF900034515 /* DefaultDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDashboardViewModel.swift; sourceTree = "<group>"; };
+		092590D02503800600034515 /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		092590D22503800F00034515 /* DefaultDashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDashboardModel.swift; sourceTree = "<group>"; };
+		092590FF250383EF00034515 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09259103250383F300034515 /* ViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0925910B2503870D00034515 /* WeatherKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatherKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +134,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09259100250383EF00034515 /* Utilities.framework in Frameworks */,
+				0925910C2503870D00034515 /* WeatherKit.framework in Frameworks */,
+				09259104250383F300034515 /* ViewLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +270,9 @@
 		092590542503781200034515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0925910B2503870D00034515 /* WeatherKit.framework */,
+				09259103250383F300034515 /* ViewLayout.framework */,
+				092590FF250383EF00034515 /* Utilities.framework */,
 				092590552503781200034515 /* Utilities.framework */,
 			);
 			name = Frameworks;
@@ -283,6 +326,8 @@
 		092590B1250379EF00034515 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				092590C825037E4B00034515 /* DashboardViewController.swift */,
+				092590CA25037E5500034515 /* DashboardViewController+ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,6 +335,8 @@
 		092590B3250379F800034515 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				092590CC25037FE800034515 /* DashboardViewModel.swift */,
+				092590CE25037FF900034515 /* DefaultDashboardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -304,6 +351,8 @@
 		092590B525037A0100034515 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				092590D02503800600034515 /* DashboardModel.swift */,
+				092590D22503800F00034515 /* DefaultDashboardModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,6 +431,7 @@
 				09259028250376BC00034515 /* Sources */,
 				09259029250376BC00034515 /* Frameworks */,
 				0925902A250376BC00034515 /* Resources */,
+				09259102250383EF00034515 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -516,9 +566,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				092590BA25037B8C00034515 /* Forecast.swift in Sources */,
+				092590D12503800600034515 /* DashboardModel.swift in Sources */,
 				092590B0250379ED00034515 /* DashboardScreen.swift in Sources */,
+				092590C925037E4B00034515 /* DashboardViewController.swift in Sources */,
+				092590CF25037FF900034515 /* DefaultDashboardViewModel.swift in Sources */,
 				092590B825037B4700034515 /* ViewContent.swift in Sources */,
+				092590CB25037E5500034515 /* DashboardViewController+ContentView.swift in Sources */,
 				092590AC250379D400034515 /* DashboardFlow.swift in Sources */,
+				092590D32503800F00034515 /* DefaultDashboardModel.swift in Sources */,
+				092590CD25037FE800034515 /* DashboardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,11 +17,15 @@ final class DefaultDashboardViewModel: DashboardViewModel {
     let place: Observable<String>
     let content: Observable<ViewContent>
     
+    let isFavorite: Observable<Bool>
+    
     // MARK: - Properties
     
     private let _title = ValueEmitter<String>(value: "Getting forecast")
     private let _place = ValueEmitter<String>(value: "")
     private let _content = ValueEmitter<ViewContent>(value: .loading)
+    
+    private let _isFavorite = ValueEmitter<Bool>(value: false)
     
     private let mapper: DomainToInterfaceMapper
     private let model: DashboardModel
@@ -35,17 +39,61 @@ final class DefaultDashboardViewModel: DashboardViewModel {
         title = _title.asObservable()
         place = _place.asObservable()
         content = _content.asObservable()
-        
-        _place.notify(using: model.countryName)
+        isFavorite = _isFavorite.asObservable()
     }
     
     // MARK: - API
     
     func getForecast() {
-        model.getForecastForUserRegion { [_title, _content, mapper] (result) in
+        _title.notify(using: "Getting forecast")
+        _place.notify(using: model.countryName)
+        _content.notify(using: .loading)
+        
+        model.getForecastForUserRegion { [_title, _content, mapper] result in
             switch result {
             case let .success(forecast):
                 _title.notify(using: "Forecast")
+                _content.notify(using: .weather(mapper.projection(form: forecast)))
+            case let .failure(error): print(error)
+            }
+        }
+    }
+    
+    func toggleFavorite() {
+        switch _isFavorite.value {
+        case true: _isFavorite.notify(using: false)
+        case false: _isFavorite.notify(using: true)
+        }
+    }
+    
+    func getForecastForUserLocation() {
+        _title.notify(using: "Getting forecast")
+        _place.notify(using: "Yours location")
+        _content.notify(using: .loading)
+        
+        model.askForLocalization { [weak self] isAllowed in
+            switch isAllowed {
+            case true: self?.getCoordinates()
+            case false: self?.getForecast()
+            }
+        }
+    }
+    
+    // MARK: - Actions
+    
+    private func getCoordinates() {
+        model.getCoordinates { [weak self] coordinates in
+            self?.getForecastFor(longitude: coordinates.longitude, latitude: coordinates.latitude)
+        }
+    }
+    
+    private func getForecastFor(longitude: Double, latitude: Double) {
+        model.getForecast(latitude: latitude, longitude: longitude) { [_title, _content, _place, mapper] result in
+            switch result {
+            case let .success(forecast):
+                print(forecast.name)
+                _title.notify(using: "Forecast")
+                _place.notify(using: forecast.name)
                 _content.notify(using: .weather(mapper.projection(form: forecast)))
             case let .failure(error): print(error)
             }

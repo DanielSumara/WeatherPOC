@@ -14,5 +14,6 @@ public protocol WeatherService: AnyObject {
     // MARK: - API
 
     func getForecast(for place: String, then completion: @escaping (Result<ForecastDTO, WeatherServiceError>) -> Void)
+    func getForecast(for longitude: Double, _ latitude: Double, then completion: @escaping (Result<ForecastDTO, WeatherServiceError>) -> Void)
 
 }

@@ -7,8 +7,8 @@
 //
 
 import DomainModels
-import RestService
 import RestModels
+import RestService
 import Utilities
 
 public final class DefaultWeatherRepository: WeatherRepository {
@@ -32,7 +32,7 @@ public final class DefaultWeatherRepository: WeatherRepository {
     // MARK: - API
     
     public func getForecast(for place: String, then completion: @escaping (Result<Forecast, WeatherRepositoryError>) -> Void) {
-        restService.getForecast(for: place) { [mapper] (result) in
+        restService.getForecast(for: place) { [mapper] result in
             switch result {
             case let .failure(error): completion(.failure(.service(error)))
             case let .success(forecast): completion(.success(mapper.forecast(from: forecast)))
@@ -40,5 +40,13 @@ public final class DefaultWeatherRepository: WeatherRepository {
         }
     }
     
+    public func getForecast(latitude: Double, longitude: Double, then completion: @escaping (Result<Forecast, WeatherRepositoryError>) -> Void) {
+        restService.getForecast(for: longitude, latitude) { [mapper] result in
+            switch result {
+            case let .failure(error): completion(.failure(.service(error)))
+            case let .success(forecast): completion(.success(mapper.forecast(from: forecast)))
+            }
+        }
+    }
     
 }

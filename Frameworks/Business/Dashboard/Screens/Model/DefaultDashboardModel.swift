@@ -18,6 +18,8 @@ final class DefaultDashboardModel: DashboardModel {
     let countryCode: String
     let countryName: String
     
+    private let localizationService = LocalizationService() // INFO: - This should be injected interface instance
+    
     private let repository: WeatherRepository
     
     // MARK: - Initializers
@@ -46,6 +48,27 @@ final class DefaultDashboardModel: DashboardModel {
             case let .success(forecast): completion(.success(forecast))
             case let .failure(error): completion(.failure(error))
             }
+        }
+    }
+    
+    func getForecast(latitude: Double, longitude: Double, completion: @escaping (Result<Forecast, Error>) -> Void) {
+        repository.getForecast(latitude: latitude, longitude: longitude) { result in
+            switch result {
+            case let .success(forecast): completion(.success(forecast))
+            case let .failure(error): completion(.failure(error))
+            }
+        }
+    }
+    
+    func askForLocalization(completion: @escaping (Bool) -> Void) {
+        localizationService.requestLocalization(completion: completion)
+    }
+    
+    func getCoordinates(then: @escaping (Coordinates) -> Void) {
+        localizationService.startObserving()
+        localizationService.location.observe(on: self) { model, coordinates in
+            then(coordinates)
+            model.localizationService.stopObserving()
         }
     }
     

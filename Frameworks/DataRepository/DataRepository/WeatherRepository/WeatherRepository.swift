@@ -14,5 +14,6 @@ public protocol WeatherRepository: AnyObject {
     // MARK: - API
 
     func getForecast(for place: String, then completion: @escaping (Result<Forecast, WeatherRepositoryError>) -> Void)
-
+    func getForecast(latitude: Double, longitude: Double, then completion: @escaping (Result<Forecast, WeatherRepositoryError>) -> Void)
+    
 }

@@ -38,9 +38,19 @@ public final class DefaultWeatherService: WeatherService {
     // MARK: - API
     
     public func getForecast(for place: String, then: @escaping (Result<ForecastDTO, WeatherServiceError>) -> Void) {
+        guard let url = WeatherURL(query: place, language: locale.languageCode ?? "PL", units: "metric")?.url else { return then(.failure(.invalidUrl)) }
+        invoke(url: url, then: then)
+    }
+    
+    public func getForecast(for longitude: Double, _ latitude: Double, then: @escaping (Result<ForecastDTO, WeatherServiceError>) -> Void) {
+        guard let url = WeatherURL(longitude: longitude, latitude: latitude, language: locale.languageCode ?? "PL", units: "metric")?.url else { return then(.failure(.invalidUrl)) }
+        invoke(url: url, then: then)
+    }
+    
+    // MARK: - Methods
+    
+    private func invoke(url: URL, then: @escaping (Result<ForecastDTO, WeatherServiceError>) -> Void) {
         let completion: (Result<ForecastDTO, WeatherServiceError>) -> Void = { result in DispatchQueue.main.async { then(result) } }
-        
-        guard let url = WeatherURL(query: place, language: locale.languageCode ?? "PL", units: "metric")?.url else { return completion(.failure(.invalidUrl)) }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"

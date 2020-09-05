@@ -14,6 +14,5 @@ public struct WindDTO: Decodable {
     
     public let speed: Double
     public let deg: Int
-    public let gust: String?
     
 }

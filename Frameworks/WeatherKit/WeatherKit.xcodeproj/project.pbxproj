@@ -16,6 +16,10 @@
 		0925919C2503B8CC00034515 /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925919B2503B8CC00034515 /* BodyLabel.swift */; };
 		0925919F2503C45B00034515 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925919E2503C45B00034515 /* IconView.swift */; };
 		092591A22503C6C300034515 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591A12503C6C300034515 /* Separator.swift */; };
+		092591A52503CFE000034515 /* ImageBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591A42503CFE000034515 /* ImageBarButtonItem.swift */; };
+		092591A82503CFF700034515 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591A72503CFF700034515 /* Utilities.framework */; };
+		092591A92503CFF700034515 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591A72503CFF700034515 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		092591AC2503D3E600034515 /* SelectableImageBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591AB2503D3E600034515 /* SelectableImageBarButtonItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,20 @@
 			remoteInfo = WeatherKit;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		092591AA2503CFF800034515 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				092591A92503CFF700034515 /* Utilities.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0904FF8725010A5B00F1A5B5 /* WeatherKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +59,9 @@
 		0925919B2503B8CC00034515 /* BodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabel.swift; sourceTree = "<group>"; };
 		0925919E2503C45B00034515 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		092591A12503C6C300034515 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
+		092591A42503CFE000034515 /* ImageBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBarButtonItem.swift; sourceTree = "<group>"; };
+		092591A72503CFF700034515 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		092591AB2503D3E600034515 /* SelectableImageBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableImageBarButtonItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092591A82503CFF700034515 /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +90,7 @@
 				0904FF8925010A5B00F1A5B5 /* WeatherKit */,
 				0904FF9425010A5B00F1A5B5 /* WeatherKitTests */,
 				0904FF8825010A5B00F1A5B5 /* Products */,
+				092591A62503CFF700034515 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +106,7 @@
 		0904FF8925010A5B00F1A5B5 /* WeatherKit */ = {
 			isa = PBXGroup;
 			children = (
+				092591A32503CFCD00034515 /* BarButtonItems */,
 				092591962503B89900034515 /* Controls */,
 				0925919D2503C44B00034515 /* ImageView */,
 				09259108250386D500034515 /* Labels */,
@@ -144,6 +168,23 @@
 			path = Separators;
 			sourceTree = "<group>";
 		};
+		092591A32503CFCD00034515 /* BarButtonItems */ = {
+			isa = PBXGroup;
+			children = (
+				092591A42503CFE000034515 /* ImageBarButtonItem.swift */,
+				092591AB2503D3E600034515 /* SelectableImageBarButtonItem.swift */,
+			);
+			path = BarButtonItems;
+			sourceTree = "<group>";
+		};
+		092591A62503CFF700034515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				092591A72503CFF700034515 /* Utilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -166,6 +207,7 @@
 				0904FF8325010A5B00F1A5B5 /* Sources */,
 				0904FF8425010A5B00F1A5B5 /* Frameworks */,
 				0904FF8525010A5B00F1A5B5 /* Resources */,
+				092591AA2503CFF800034515 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092591A52503CFE000034515 /* ImageBarButtonItem.swift in Sources */,
 				0925919F2503C45B00034515 /* IconView.swift in Sources */,
 				0925919C2503B8CC00034515 /* BodyLabel.swift in Sources */,
 				0925910A250386F100034515 /* TitleLabel.swift in Sources */,
+				092591AC2503D3E600034515 /* SelectableImageBarButtonItem.swift in Sources */,
 				0925919A2503B8C500034515 /* HeadlineLabel.swift in Sources */,
 				092591982503B8A900034515 /* WeatherInfoLabel.swift in Sources */,
 				092591A22503C6C300034515 /* Separator.swift in Sources */,

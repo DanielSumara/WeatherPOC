@@ -10,7 +10,7 @@ import DomainModels
 import Foundation
 
 protocol DashboardModel: AnyObject {
-        
+    
     // MARK: - Properties
     
     var countryCode: String { get }
@@ -20,5 +20,9 @@ protocol DashboardModel: AnyObject {
     
     func getForecastForUserRegion(completion: @escaping (Result<Forecast, Error>) -> Void)
     func getForecast(for place: String, completion: @escaping (Result<Forecast, Error>) -> Void)
+    func getForecast(latitude: Double, longitude: Double, completion: @escaping (Result<Forecast, Error>) -> Void)
+    
+    func askForLocalization(completion: @escaping (Bool) -> Void)
+    func getCoordinates(then: @escaping (Coordinates) -> Void)
     
 }

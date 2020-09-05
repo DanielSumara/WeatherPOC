@@ -56,6 +56,13 @@ extension DashboardViewController {
                 activityIndicator.isHidden = false
                 activityIndicator.startAnimating()
                 weatherDescription.text = ""
+                temperatureLabel.set(text: nil)
+                feelsLikeTemperatureLabel.set(text: nil)
+                pressureLabel.set(text: nil)
+                humidity.set(text: nil)
+                windSpeedLabel.set(text: nil)
+                rainLabel.set(text: nil)
+                snowLabel.set(text: nil)
             case let .weather(forecast):
                 activityIndicator.stopAnimating()
                 activityIndicator.isHidden = true

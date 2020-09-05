@@ -43,6 +43,7 @@
 		092591902503AC8B00034515 /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918F2503AC8B00034515 /* DomainModels.framework */; };
 		092591912503AC8B00034515 /* DomainModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918F2503AC8B00034515 /* DomainModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092591942503B2B400034515 /* DomainToInterfaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591932503B2B400034515 /* DomainToInterfaceMapper.swift */; };
+		092591AF2503DC8A00034515 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591AE2503DC8A00034515 /* LocalizationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		0925918C2503AC8600034515 /* DataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0925918F2503AC8B00034515 /* DomainModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		092591932503B2B400034515 /* DomainToInterfaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainToInterfaceMapper.swift; sourceTree = "<group>"; };
+		092591AE2503DC8A00034515 /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +386,7 @@
 			children = (
 				092590D02503800600034515 /* DashboardModel.swift */,
 				092590D22503800F00034515 /* DefaultDashboardModel.swift */,
+				092591AD2503DC7E00034515 /* LocalizationService */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -402,6 +405,14 @@
 				092591932503B2B400034515 /* DomainToInterfaceMapper.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		092591AD2503DC7E00034515 /* LocalizationService */ = {
+			isa = PBXGroup;
+			children = (
+				092591AE2503DC8A00034515 /* LocalizationService.swift */,
+			);
+			path = LocalizationService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -607,6 +618,7 @@
 			files = (
 				092591942503B2B400034515 /* DomainToInterfaceMapper.swift in Sources */,
 				092590BA25037B8C00034515 /* ForecastProjection.swift in Sources */,
+				092591AF2503DC8A00034515 /* LocalizationService.swift in Sources */,
 				092590D12503800600034515 /* DashboardModel.swift in Sources */,
 				092590B0250379ED00034515 /* DashboardScreen.swift in Sources */,
 				092590C925037E4B00034515 /* DashboardViewController.swift in Sources */,

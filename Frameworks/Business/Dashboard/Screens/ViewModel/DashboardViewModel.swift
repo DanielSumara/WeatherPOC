@@ -16,9 +16,13 @@ protocol DashboardViewModel: AnyObject {
     var title: Observable<String> { get }
     var place: Observable<String> { get }
     var content: Observable<ViewContent> { get }
+    var isFavorite: Observable<Bool> { get }
     
     // MARK: - API
     
-    func getForecast() 
+    func getForecast()
+    
+    func toggleFavorite()
+    func getForecastForUserLocation()
     
 }

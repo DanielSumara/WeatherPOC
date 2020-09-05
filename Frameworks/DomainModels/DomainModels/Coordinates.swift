@@ -12,12 +12,12 @@ public struct Coordinates {
     
     // MARK: - Properties
     
-    public let latitude: Decimal
-    public let longitude: Decimal
+    public let latitude: Double
+    public let longitude: Double
     
     // MARK: - Initializers
     
-    public init(latitude: Decimal, longitude: Decimal) {
+    public init(latitude: Double, longitude: Double) {
         self.latitude = latitude
         self.longitude = longitude
     }

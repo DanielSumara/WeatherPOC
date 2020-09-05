@@ -14,14 +14,12 @@ public struct Wind {
     
     public let speed: Double
     public let deg: Int
-    public let gust: String?
     
     // MARK: - Initializers
     
-    public init(speed: Double, deg: Int, gust: String?) {
+    public init(speed: Double, deg: Int) {
         self.speed = speed
         self.deg = deg
-        self.gust = gust
     }
     
 }

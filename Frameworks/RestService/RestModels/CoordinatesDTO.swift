@@ -12,8 +12,8 @@ public struct CoordinatesDTO: Decodable {
     
     // MARK: - Properties
     
-    public let latitude: Decimal
-    public let longitude: Decimal
+    public let latitude: Double
+    public let longitude: Double
     
 }
 

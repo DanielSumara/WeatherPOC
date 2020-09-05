@@ -40,7 +40,7 @@ final class DefaultTransportToDomainMapper: TransportToDomainMapper {
     }
     
     private func wind(from item: WindDTO) -> Wind {
-        Wind(speed: item.speed, deg: item.deg, gust: item.gust)
+        Wind(speed: item.speed, deg: item.deg)
     }
     
     private func clouds(from item: CloudsDTO) -> Clouds {

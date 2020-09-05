@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import WeatherFlow
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     // MARK: - Properties
 
-    private var mainWindow: UIWindow?
+    private let appCoordinator = AppCoordinator.instance
 
     // MARK: - API
 
@@ -22,8 +23,8 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         window.backgroundColor = .white
         window.makeKeyAndVisible()
-
-        mainWindow = window
+        
+        appCoordinator.start(in: window)
     }
 
 }

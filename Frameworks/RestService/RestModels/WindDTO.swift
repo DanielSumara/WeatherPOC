@@ -12,7 +12,7 @@ public struct WindDTO: Decodable {
     
     // MARK: - Properties
     
-    public let speed: Decimal
+    public let speed: Double
     public let deg: Int
     public let gust: String?
     

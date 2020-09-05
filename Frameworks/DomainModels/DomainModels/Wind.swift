@@ -12,13 +12,13 @@ public struct Wind {
     
     // MARK: - Properties
     
-    public let speed: Decimal
+    public let speed: Double
     public let deg: Int
     public let gust: String?
     
     // MARK: - Initializers
     
-    public init(speed: Decimal, deg: Int, gust: String?) {
+    public init(speed: Double, deg: Int, gust: String?) {
         self.speed = speed
         self.deg = deg
         self.gust = gust

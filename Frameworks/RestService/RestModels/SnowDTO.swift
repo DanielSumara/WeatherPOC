@@ -12,8 +12,8 @@ public struct SnowDTO: Decodable {
     
     // MARK: - Properties
     
-    public let oneHour: UInt
-    public let threeHours: UInt
+    public let oneHour: Double
+    public let threeHours: Double?
     
 }
 

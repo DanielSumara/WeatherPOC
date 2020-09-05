@@ -12,12 +12,12 @@ public struct Rain {
     
     // MARK: - Properties
     
-    public let oneHour: UInt
-    public let threeHours: UInt
+    public let oneHour: Double
+    public let threeHours: Double?
     
     // MARK: - Initializers
     
-    public init(oneHour: UInt, threeHours: UInt) {
+    public init(oneHour: Double, threeHours: Double?) {
         self.oneHour = oneHour
         self.threeHours = threeHours
     }

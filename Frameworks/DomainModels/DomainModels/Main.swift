@@ -12,19 +12,19 @@ public struct Main {
     
     // MARK: - Properties
     
-    public let temp: Decimal
-    public let feelsLike: Decimal
-    public let tempMin: Decimal
-    public let tempMax: Decimal
+    public let temp: Double
+    public let feelsLike: Double
+    public let tempMin: Double
+    public let tempMax: Double
     public let pressure: UInt
     public let humidity: UInt
     
     // MARK: - Initializers
     
-    public init(temp: Decimal,
-                feelsLike: Decimal,
-                tempMin: Decimal,
-                tempMax: Decimal,
+    public init(temp: Double,
+                feelsLike: Double,
+                tempMin: Double,
+                tempMax: Double,
                 pressure: UInt,
                 humidity: UInt) {
         self.temp = temp

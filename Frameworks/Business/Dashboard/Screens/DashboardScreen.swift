@@ -21,7 +21,7 @@ final class DashboardScreen: Screen {
     
     init(repository: WeatherRepository) {
         let model = DefaultDashboardModel(repository: repository, locale: .current)
-        let viewModel = DefaultDashboardViewModel(model: model)
+        let viewModel = DefaultDashboardViewModel(model: model, mapper: DomainToInterfaceMapper())
         viewController = DashboardViewController(using: viewModel)
     }
     

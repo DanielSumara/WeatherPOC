@@ -23,11 +23,13 @@ final class DefaultDashboardViewModel: DashboardViewModel {
     private let _place = ValueEmitter<String>(value: "")
     private let _content = ValueEmitter<ViewContent>(value: .loading)
     
+    private let mapper: DomainToInterfaceMapper
     private let model: DashboardModel
     
     // MARK: - Initializers
     
-    init(model: DashboardModel) {
+    init(model: DashboardModel, mapper: DomainToInterfaceMapper) {
+        self.mapper = mapper
         self.model = model
         
         title = _title.asObservable()
@@ -40,9 +42,11 @@ final class DefaultDashboardViewModel: DashboardViewModel {
     // MARK: - API
     
     func getForecast() {
-        model.getForecastForUserRegion { (result) in
+        model.getForecastForUserRegion { [_title, _content, mapper] (result) in
             switch result {
-            case let .success(forecast): print(forecast)
+            case let .success(forecast):
+                _title.notify(using: "Forecast")
+                _content.notify(using: .weather(mapper.projection(form: forecast)))
             case let .failure(error): print(error)
             }
         }

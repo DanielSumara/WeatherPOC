@@ -12,10 +12,10 @@ public struct MainDTO: Decodable {
     
     // MARK: - Properties
     
-    public let temp: Decimal
-    public let feelsLike: Decimal
-    public let tempMin: Decimal
-    public let tempMax: Decimal
+    public let temp: Double
+    public let feelsLike: Double
+    public let tempMin: Double
+    public let tempMax: Double
     public let pressure: UInt
     public let humidity: UInt
     

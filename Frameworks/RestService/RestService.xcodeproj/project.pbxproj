@@ -10,6 +10,25 @@
 		0904FF1F250109F300F1A5B5 /* RestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0904FF15250109F300F1A5B5 /* RestService.framework */; };
 		0904FF24250109F300F1A5B5 /* RestServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904FF23250109F300F1A5B5 /* RestServiceTests.swift */; };
 		0904FF26250109F300F1A5B5 /* RestService.h in Headers */ = {isa = PBXBuildFile; fileRef = 0904FF18250109F300F1A5B5 /* RestService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0925911C250390A300034515 /* RestModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0925911A250390A300034515 /* RestModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		092591222503911B00034515 /* CoordinatesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591212503911B00034515 /* CoordinatesDTO.swift */; };
+		09259124250391AD00034515 /* WeatherDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09259123250391AD00034515 /* WeatherDTO.swift */; };
+		092591262503922C00034515 /* MainDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591252503922C00034515 /* MainDTO.swift */; };
+		09259128250392BC00034515 /* WindDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09259127250392BC00034515 /* WindDTO.swift */; };
+		0925912A250392F000034515 /* CloudsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09259129250392F000034515 /* CloudsDTO.swift */; };
+		0925912C2503932900034515 /* RainDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925912B2503932900034515 /* RainDTO.swift */; };
+		0925912E250393DF00034515 /* SnowDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925912D250393DF00034515 /* SnowDTO.swift */; };
+		092591302503940300034515 /* SystemDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925912F2503940300034515 /* SystemDTO.swift */; };
+		092591322503945400034515 /* ForecastDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591312503945400034515 /* ForecastDTO.swift */; };
+		0925913C2503961500034515 /* WeatherURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925913B2503961500034515 /* WeatherURL.swift */; };
+		0925913E250397F300034515 /* WeatherServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925913D250397F200034515 /* WeatherServiceError.swift */; };
+		092591422503982A00034515 /* DefaultNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591412503982A00034515 /* DefaultNetworkSession.swift */; };
+		092591442503983500034515 /* DefaultNetworkSessionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591432503983500034515 /* DefaultNetworkSessionTask.swift */; };
+		092591462503983F00034515 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591452503983F00034515 /* NetworkSession.swift */; };
+		092591482503984C00034515 /* NetworkSessionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591472503984C00034515 /* NetworkSessionTask.swift */; };
+		0925915125039EE800034515 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925915025039EE800034515 /* WeatherService.swift */; };
+		0925915325039EF100034515 /* DefaultWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0925915225039EF100034515 /* DefaultWeatherService.swift */; };
+		092591552503A1CD00034515 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591542503A1CD00034515 /* ServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +39,13 @@
 			remoteGlobalIDString = 0904FF14250109F300F1A5B5;
 			remoteInfo = RestService;
 		};
+		092591332503951800034515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0904FF0C250109F300F1A5B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09259117250390A200034515;
+			remoteInfo = RestModels;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +55,27 @@
 		0904FF1E250109F300F1A5B5 /* RestServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0904FF23250109F300F1A5B5 /* RestServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceTests.swift; sourceTree = "<group>"; };
 		0904FF25250109F300F1A5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09259118250390A200034515 /* RestModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0925911A250390A300034515 /* RestModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestModels.h; sourceTree = "<group>"; };
+		0925911B250390A300034515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		092591212503911B00034515 /* CoordinatesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesDTO.swift; sourceTree = "<group>"; };
+		09259123250391AD00034515 /* WeatherDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDTO.swift; sourceTree = "<group>"; };
+		092591252503922C00034515 /* MainDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDTO.swift; sourceTree = "<group>"; };
+		09259127250392BC00034515 /* WindDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindDTO.swift; sourceTree = "<group>"; };
+		09259129250392F000034515 /* CloudsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsDTO.swift; sourceTree = "<group>"; };
+		0925912B2503932900034515 /* RainDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainDTO.swift; sourceTree = "<group>"; };
+		0925912D250393DF00034515 /* SnowDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowDTO.swift; sourceTree = "<group>"; };
+		0925912F2503940300034515 /* SystemDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemDTO.swift; sourceTree = "<group>"; };
+		092591312503945400034515 /* ForecastDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDTO.swift; sourceTree = "<group>"; };
+		0925913B2503961500034515 /* WeatherURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherURL.swift; sourceTree = "<group>"; };
+		0925913D250397F200034515 /* WeatherServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceError.swift; sourceTree = "<group>"; };
+		092591412503982A00034515 /* DefaultNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkSession.swift; sourceTree = "<group>"; };
+		092591432503983500034515 /* DefaultNetworkSessionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkSessionTask.swift; sourceTree = "<group>"; };
+		092591452503983F00034515 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		092591472503984C00034515 /* NetworkSessionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionTask.swift; sourceTree = "<group>"; };
+		0925915025039EE800034515 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		0925915225039EF100034515 /* DefaultWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWeatherService.swift; sourceTree = "<group>"; };
+		092591542503A1CD00034515 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +94,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09259115250390A200034515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +109,7 @@
 			children = (
 				0904FF17250109F300F1A5B5 /* RestService */,
 				0904FF22250109F300F1A5B5 /* RestServiceTests */,
+				09259119250390A300034515 /* RestModels */,
 				0904FF16250109F300F1A5B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +119,7 @@
 			children = (
 				0904FF15250109F300F1A5B5 /* RestService.framework */,
 				0904FF1E250109F300F1A5B5 /* RestServiceTests.xctest */,
+				09259118250390A200034515 /* RestModels.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +127,11 @@
 		0904FF17250109F300F1A5B5 /* RestService */ = {
 			isa = PBXGroup;
 			children = (
-				0904FF18250109F300F1A5B5 /* RestService.h */,
-				0904FF19250109F300F1A5B5 /* Info.plist */,
+				09259138250395E600034515 /* Data */,
+				09259139250395EF00034515 /* Errors */,
+				0925913A250395F900034515 /* Infrastructure */,
+				09259135250395AC00034515 /* SupportingFiles */,
+				09259137250395DB00034515 /* WeatherService */,
 			);
 			path = RestService;
 			sourceTree = "<group>";
@@ -86,6 +145,86 @@
 			path = RestServiceTests;
 			sourceTree = "<group>";
 		};
+		09259119250390A300034515 /* RestModels */ = {
+			isa = PBXGroup;
+			children = (
+				09259129250392F000034515 /* CloudsDTO.swift */,
+				092591212503911B00034515 /* CoordinatesDTO.swift */,
+				092591312503945400034515 /* ForecastDTO.swift */,
+				092591252503922C00034515 /* MainDTO.swift */,
+				0925912B2503932900034515 /* RainDTO.swift */,
+				092591542503A1CD00034515 /* ServiceError.swift */,
+				0925912D250393DF00034515 /* SnowDTO.swift */,
+				0925912F2503940300034515 /* SystemDTO.swift */,
+				09259123250391AD00034515 /* WeatherDTO.swift */,
+				09259127250392BC00034515 /* WindDTO.swift */,
+				09259120250390AF00034515 /* SupportingFiles */,
+			);
+			path = RestModels;
+			sourceTree = "<group>";
+		};
+		09259120250390AF00034515 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0925911A250390A300034515 /* RestModels.h */,
+				0925911B250390A300034515 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		09259135250395AC00034515 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0904FF18250109F300F1A5B5 /* RestService.h */,
+				0904FF19250109F300F1A5B5 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		09259137250395DB00034515 /* WeatherService */ = {
+			isa = PBXGroup;
+			children = (
+				0925915225039EF100034515 /* DefaultWeatherService.swift */,
+				0925915025039EE800034515 /* WeatherService.swift */,
+			);
+			path = WeatherService;
+			sourceTree = "<group>";
+		};
+		09259138250395E600034515 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0925913B2503961500034515 /* WeatherURL.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		09259139250395EF00034515 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				0925913D250397F200034515 /* WeatherServiceError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		0925913A250395F900034515 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0925913F2503980400034515 /* NetworkSession */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		0925913F2503980400034515 /* NetworkSession */ = {
+			isa = PBXGroup;
+			children = (
+				092591412503982A00034515 /* DefaultNetworkSession.swift */,
+				092591432503983500034515 /* DefaultNetworkSessionTask.swift */,
+				092591452503983F00034515 /* NetworkSession.swift */,
+				092591472503984C00034515 /* NetworkSessionTask.swift */,
+			);
+			path = NetworkSession;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +233,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0904FF26250109F300F1A5B5 /* RestService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09259113250390A200034515 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0925911C250390A300034515 /* RestModels.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +259,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				092591342503951800034515 /* PBXTargetDependency */,
 			);
 			name = RestService;
 			productName = RestService;
@@ -136,6 +284,24 @@
 			productReference = 0904FF1E250109F300F1A5B5 /* RestServiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		09259117250390A200034515 /* RestModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0925911F250390A300034515 /* Build configuration list for PBXNativeTarget "RestModels" */;
+			buildPhases = (
+				09259113250390A200034515 /* Headers */,
+				09259114250390A200034515 /* Sources */,
+				09259115250390A200034515 /* Frameworks */,
+				09259116250390A200034515 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestModels;
+			productName = RestModels;
+			productReference = 09259118250390A200034515 /* RestModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,9 +314,14 @@
 				TargetAttributes = {
 					0904FF14250109F300F1A5B5 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 					0904FF1D250109F300F1A5B5 = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					09259117250390A200034515 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -169,6 +340,7 @@
 			targets = (
 				0904FF14250109F300F1A5B5 /* RestService */,
 				0904FF1D250109F300F1A5B5 /* RestServiceTests */,
+				09259117250390A200034515 /* RestModels */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +360,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09259116250390A200034515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -195,6 +374,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092591442503983500034515 /* DefaultNetworkSessionTask.swift in Sources */,
+				092591462503983F00034515 /* NetworkSession.swift in Sources */,
+				092591482503984C00034515 /* NetworkSessionTask.swift in Sources */,
+				092591422503982A00034515 /* DefaultNetworkSession.swift in Sources */,
+				0925915325039EF100034515 /* DefaultWeatherService.swift in Sources */,
+				0925913C2503961500034515 /* WeatherURL.swift in Sources */,
+				0925913E250397F300034515 /* WeatherServiceError.swift in Sources */,
+				0925915125039EE800034515 /* WeatherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +393,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09259114250390A200034515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092591552503A1CD00034515 /* ServiceError.swift in Sources */,
+				0925912A250392F000034515 /* CloudsDTO.swift in Sources */,
+				09259124250391AD00034515 /* WeatherDTO.swift in Sources */,
+				0925912E250393DF00034515 /* SnowDTO.swift in Sources */,
+				09259128250392BC00034515 /* WindDTO.swift in Sources */,
+				092591262503922C00034515 /* MainDTO.swift in Sources */,
+				092591222503911B00034515 /* CoordinatesDTO.swift in Sources */,
+				092591322503945400034515 /* ForecastDTO.swift in Sources */,
+				092591302503940300034515 /* SystemDTO.swift in Sources */,
+				0925912C2503932900034515 /* RainDTO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -213,6 +417,11 @@
 			isa = PBXTargetDependency;
 			target = 0904FF14250109F300F1A5B5 /* RestService */;
 			targetProxy = 0904FF20250109F300F1A5B5 /* PBXContainerItemProxy */;
+		};
+		092591342503951800034515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09259117250390A200034515 /* RestModels */;
+			targetProxy = 092591332503951800034515 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -340,6 +549,7 @@
 		0904FF2A250109F300F1A5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -356,6 +566,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +575,7 @@
 		0904FF2B250109F300F1A5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -388,6 +600,7 @@
 		0904FF2D250109F300F1A5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = RestServiceTests/Info.plist;
@@ -406,6 +619,7 @@
 		0904FF2E250109F300F1A5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = RestServiceTests/Info.plist;
@@ -416,6 +630,57 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestServiceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0925911D250390A300034515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RestModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0925911E250390A300034515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RestModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,6 +712,15 @@
 			buildConfigurations = (
 				0904FF2D250109F300F1A5B5 /* Debug */,
 				0904FF2E250109F300F1A5B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0925911F250390A300034515 /* Build configuration list for PBXNativeTarget "RestModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0925911D250390A300034515 /* Debug */,
+				0925911E250390A300034515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

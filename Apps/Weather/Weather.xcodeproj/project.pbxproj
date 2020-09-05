@@ -33,6 +33,8 @@
 		092590942503786100034515 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092590922503786100034515 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092590FD250383E300034515 /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092590FC250383E300034515 /* ViewLayout.framework */; };
 		092590FE250383E300034515 /* ViewLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092590FC250383E300034515 /* ViewLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0925914A25039E4700034515 /* RestModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0925914925039E4700034515 /* RestModels.framework */; };
+		0925914B25039E4700034515 /* RestModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925914925039E4700034515 /* RestModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +54,7 @@
 				0925906A2503783000034515 /* DomainModels.framework in Embed Frameworks */,
 				0925906E2503783000034515 /* RestService.framework in Embed Frameworks */,
 				092590742503783000034515 /* WeatherKit.framework in Embed Frameworks */,
+				0925914B25039E4700034515 /* RestModels.framework in Embed Frameworks */,
 				092590682503783000034515 /* DataRepository.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -77,6 +80,7 @@
 		092590622503783000034515 /* WeatherKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatherKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		092590922503786100034515 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		092590FC250383E300034515 /* ViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0925914925039E4700034515 /* RestModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RestModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				092590692503783000034515 /* DomainModels.framework in Frameworks */,
 				0925906D2503783000034515 /* RestService.framework in Frameworks */,
 				092590732503783000034515 /* WeatherKit.framework in Frameworks */,
+				0925914A25039E4700034515 /* RestModels.framework in Frameworks */,
 				092590672503783000034515 /* DataRepository.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +154,7 @@
 		092590592503783000034515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0925914925039E4700034515 /* RestModels.framework */,
 				092590FC250383E300034515 /* ViewLayout.framework */,
 				092590922503786100034515 /* Extensions.framework */,
 				0925905A2503783000034515 /* Business.framework */,

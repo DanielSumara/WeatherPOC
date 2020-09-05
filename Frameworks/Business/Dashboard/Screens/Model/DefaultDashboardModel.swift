@@ -66,10 +66,7 @@ final class DefaultDashboardModel: DashboardModel {
     
     func getCoordinates(then: @escaping (Coordinates) -> Void) {
         localizationService.startObserving()
-        localizationService.location.observe(on: self) { model, coordinates in
-            then(coordinates)
-            model.localizationService.stopObserving()
-        }
+        localizationService.location.observe(on: self) { _, coordinates in then(coordinates) }
     }
     
 }

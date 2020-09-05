@@ -44,6 +44,9 @@
 		092591912503AC8B00034515 /* DomainModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918F2503AC8B00034515 /* DomainModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092591942503B2B400034515 /* DomainToInterfaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591932503B2B400034515 /* DomainToInterfaceMapper.swift */; };
 		092591AF2503DC8A00034515 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591AE2503DC8A00034515 /* LocalizationService.swift */; };
+		092591B12503E98A00034515 /* DashboardScreenEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591B02503E98A00034515 /* DashboardScreenEvents.swift */; };
+		092591B32503E99200034515 /* DashboardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591B22503E99200034515 /* DashboardEvents.swift */; };
+		092591B52503E99B00034515 /* DefaultDashboardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591B42503E99B00034515 /* DefaultDashboardEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +140,9 @@
 		0925918F2503AC8B00034515 /* DomainModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		092591932503B2B400034515 /* DomainToInterfaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainToInterfaceMapper.swift; sourceTree = "<group>"; };
 		092591AE2503DC8A00034515 /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
+		092591B02503E98A00034515 /* DashboardScreenEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreenEvents.swift; sourceTree = "<group>"; };
+		092591B22503E99200034515 /* DashboardEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardEvents.swift; sourceTree = "<group>"; };
+		092591B42503E99B00034515 /* DefaultDashboardEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDashboardEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +383,9 @@
 		092590B4250379FC00034515 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				092591B22503E99200034515 /* DashboardEvents.swift */,
+				092591B02503E98A00034515 /* DashboardScreenEvents.swift */,
+				092591B42503E99B00034515 /* DefaultDashboardEvents.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -625,7 +634,10 @@
 				092590CF25037FF900034515 /* DefaultDashboardViewModel.swift in Sources */,
 				092590B825037B4700034515 /* ViewContent.swift in Sources */,
 				092590CB25037E5500034515 /* DashboardViewController+ContentView.swift in Sources */,
+				092591B12503E98A00034515 /* DashboardScreenEvents.swift in Sources */,
+				092591B52503E99B00034515 /* DefaultDashboardEvents.swift in Sources */,
 				092590AC250379D400034515 /* DashboardFlow.swift in Sources */,
+				092591B32503E99200034515 /* DashboardEvents.swift in Sources */,
 				092590D32503800F00034515 /* DefaultDashboardModel.swift in Sources */,
 				092590CD25037FE800034515 /* DashboardViewModel.swift in Sources */,
 			);

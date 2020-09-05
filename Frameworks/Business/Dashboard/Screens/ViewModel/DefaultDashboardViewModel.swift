@@ -27,12 +27,14 @@ final class DefaultDashboardViewModel: DashboardViewModel {
     
     private let _isFavorite = ValueEmitter<Bool>(value: false)
     
+    private let events: DashboardEvents
     private let mapper: DomainToInterfaceMapper
     private let model: DashboardModel
     
     // MARK: - Initializers
     
-    init(model: DashboardModel, mapper: DomainToInterfaceMapper) {
+    init(model: DashboardModel, mapper: DomainToInterfaceMapper, events: DashboardEvents) {
+        self.events = events
         self.mapper = mapper
         self.model = model
         
@@ -49,12 +51,12 @@ final class DefaultDashboardViewModel: DashboardViewModel {
         _place.notify(using: model.countryName)
         _content.notify(using: .loading)
         
-        model.getForecastForUserRegion { [_title, _content, mapper] result in
+        model.getForecastForUserRegion { [_title, _content, mapper, events] result in
             switch result {
             case let .success(forecast):
                 _title.notify(using: "Forecast")
                 _content.notify(using: .weather(mapper.projection(form: forecast)))
-            case let .failure(error): print(error)
+            case let .failure(error): events.report(error)
             }
         }
     }
@@ -79,6 +81,10 @@ final class DefaultDashboardViewModel: DashboardViewModel {
         }
     }
     
+    func startSearch() {
+        events.invokeSearch()
+    }
+    
     // MARK: - Actions
     
     private func getCoordinates() {
@@ -88,14 +94,13 @@ final class DefaultDashboardViewModel: DashboardViewModel {
     }
     
     private func getForecastFor(longitude: Double, latitude: Double) {
-        model.getForecast(latitude: latitude, longitude: longitude) { [_title, _content, _place, mapper] result in
+        model.getForecast(latitude: latitude, longitude: longitude) { [_title, _content, _place, mapper, events] result in
             switch result {
             case let .success(forecast):
-                print(forecast.name)
                 _title.notify(using: "Forecast")
                 _place.notify(using: forecast.name)
                 _content.notify(using: .weather(mapper.projection(form: forecast)))
-            case let .failure(error): print(error)
+            case let .failure(error): events.report(error)
             }
         }
     }

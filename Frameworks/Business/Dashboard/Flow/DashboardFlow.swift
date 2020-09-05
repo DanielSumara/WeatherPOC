@@ -36,11 +36,24 @@ public final class DashboardFlow: ModuleFlow {
     
     public func start() {
         let screen = DashboardScreen(repository: repository)
+        screen.events.errorOccurred.observe(on: self) { flow, error in flow.show(error) }
+        screen.events.searchTapped.observe(on: self) { flow, _ in flow.showCityPicker() }
+        
         presenter.push(screen)
         
         presenter.observeAppearance(of: screen, on: self) { flow in flow.childFlow = nil }
     }
     
     public func stop() {}
+    
+    // MARK: - Methods
+    
+    private func showCityPicker() {}
+    
+    private func show(_ error: Error) {
+        let alertViewController = UIAlertController(title: "Error occurred", message: error.localizedDescription, preferredStyle: .alert)
+        alertViewController.addAction(UIAlertAction(title: "Understand", style: .cancel, handler: nil))
+        presenter.present(alertViewController)
+    }
     
 }

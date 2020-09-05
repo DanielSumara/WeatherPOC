@@ -15,13 +15,18 @@ final class DashboardScreen: Screen {
     
     // MARK: - Properties
     
+    let events: DashboardScreenEvents
     let viewController: UIViewController
     
     // MARK: - Initializers
     
     init(repository: WeatherRepository) {
+        let events = DefaultDashboardEvents()
         let model = DefaultDashboardModel(repository: repository, locale: .current)
-        let viewModel = DefaultDashboardViewModel(model: model, mapper: DomainToInterfaceMapper())
+        let viewModel = DefaultDashboardViewModel(model: model, mapper: DomainToInterfaceMapper(), events: events)
+        
+        self.events = events
+        
         viewController = DashboardViewController(using: viewModel)
     }
     

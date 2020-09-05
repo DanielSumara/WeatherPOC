@@ -60,6 +60,7 @@ final class DashboardViewController: UIViewController {
     private func bindViewWithViewModel() {
         favoritesButton.tapped.observe(on: self) { [viewModel] _, _ in viewModel.toggleFavorite() }
         locationButton.tapped.observe(on: self) { [viewModel] _, _ in viewModel.getForecastForUserLocation() }
+        searchButton.tapped.observe(on: self) { [viewModel] _, _ in viewModel.startSearch() }
     }
     
     private func setupComponents() {

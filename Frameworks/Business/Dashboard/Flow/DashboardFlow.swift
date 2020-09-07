@@ -18,12 +18,8 @@ public final class DashboardFlow: ModuleFlow {
     private let presenter: Presenter
     private let repository: WeatherRepository
     
-    private var childFlow: ModuleFlow? {
-        didSet {
-            oldValue?.stop()
-            childFlow?.start()
-        }
-    }
+    private lazy var screen = DashboardScreen(repository: repository)
+    private var modalScreen: Screen?
     
     // MARK: - Initializers
     
@@ -35,20 +31,28 @@ public final class DashboardFlow: ModuleFlow {
     // MARK: - API
     
     public func start() {
-        let screen = DashboardScreen(repository: repository)
         screen.events.errorOccurred.observe(on: self) { flow, error in flow.show(error) }
         screen.events.searchTapped.observe(on: self) { flow, _ in flow.showCityPicker() }
         
         presenter.push(screen)
-        
-        presenter.observeAppearance(of: screen, on: self) { flow in flow.childFlow = nil }
     }
     
     public func stop() {}
     
     // MARK: - Methods
     
-    private func showCityPicker() {}
+    private func showCityPicker() {
+        let screen = LocationPickerScreen()
+        screen.events.cityPicked.observe(on: self.screen) { screen, city in
+            screen.getForecast(for: city)
+            screen.viewController.dismiss(animated: true)
+        }
+        
+        let presenter = DefaultPresenter()
+        presenter.push(screen)
+        
+        self.presenter.present(presenter.viewController)
+    }
     
     private func show(_ error: Error) {
         let alertViewController = UIAlertController(title: "Error occurred", message: error.localizedDescription, preferredStyle: .alert)

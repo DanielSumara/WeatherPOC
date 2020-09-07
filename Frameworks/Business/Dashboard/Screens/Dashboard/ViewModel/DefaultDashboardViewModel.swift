@@ -61,6 +61,23 @@ final class DefaultDashboardViewModel: DashboardViewModel {
         }
     }
     
+    func getForecast(for city: String) {
+        _title.notify(using: "Getting forecast")
+        _place.notify(using: city)
+        _content.notify(using: .loading)
+        
+        model.getForecast(for: city) { [weak self, _title, _content, mapper, events] result in
+            switch result {
+            case let .success(forecast):
+                _title.notify(using: "Forecast")
+                _content.notify(using: .weather(mapper.projection(form: forecast)))
+            case let .failure(error):
+                events.report(error)
+                self?.getForecast()
+            }
+        }
+    }
+    
     func toggleFavorite() {
         switch _isFavorite.value {
         case true: _isFavorite.notify(using: false)

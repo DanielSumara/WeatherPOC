@@ -21,6 +21,7 @@ protocol DashboardViewModel: AnyObject {
     // MARK: - API
     
     func getForecast()
+    func getForecast(for city: String)
     
     func toggleFavorite()
     func getForecastForUserLocation()

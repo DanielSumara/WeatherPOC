@@ -47,6 +47,16 @@
 		092591B12503E98A00034515 /* DashboardScreenEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591B02503E98A00034515 /* DashboardScreenEvents.swift */; };
 		092591B32503E99200034515 /* DashboardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591B22503E99200034515 /* DashboardEvents.swift */; };
 		092591B52503E99B00034515 /* DefaultDashboardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591B42503E99B00034515 /* DefaultDashboardEvents.swift */; };
+		092591BD2503F45B00034515 /* LocationPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591BC2503F45B00034515 /* LocationPickerScreen.swift */; };
+		092591C32503F47C00034515 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591C22503F47C00034515 /* Resources.framework */; };
+		092591C42503F47C00034515 /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591C22503F47C00034515 /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		092591C92503F50300034515 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591C82503F50300034515 /* LocationPickerViewController.swift */; };
+		092591CB2503F5D200034515 /* LocationPickerViewController+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591CA2503F5D200034515 /* LocationPickerViewController+ContentView.swift */; };
+		092591CD2503F66D00034515 /* LocationPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591CC2503F66D00034515 /* LocationPickerViewModel.swift */; };
+		092591CF2503F68700034515 /* DefaultLocationPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591CE2503F68700034515 /* DefaultLocationPickerViewModel.swift */; };
+		092591D12503F6B400034515 /* LocationPickerScreenEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591D02503F6B400034515 /* LocationPickerScreenEvents.swift */; };
+		092591D32503F6F200034515 /* LocationPickerEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591D22503F6F200034515 /* LocationPickerEvents.swift */; };
+		092591D52503F71800034515 /* DefaultLocationPickerEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591D42503F71800034515 /* DefaultLocationPickerEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +92,7 @@
 			files = (
 				09259101250383EF00034515 /* Utilities.framework in Embed Frameworks */,
 				0925910D2503870D00034515 /* WeatherKit.framework in Embed Frameworks */,
+				092591C42503F47C00034515 /* Resources.framework in Embed Frameworks */,
 				092591912503AC8B00034515 /* DomainModels.framework in Embed Frameworks */,
 				0925918E2503AC8600034515 /* DataRepository.framework in Embed Frameworks */,
 				09259105250383F300034515 /* ViewLayout.framework in Embed Frameworks */,
@@ -143,6 +154,15 @@
 		092591B02503E98A00034515 /* DashboardScreenEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreenEvents.swift; sourceTree = "<group>"; };
 		092591B22503E99200034515 /* DashboardEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardEvents.swift; sourceTree = "<group>"; };
 		092591B42503E99B00034515 /* DefaultDashboardEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDashboardEvents.swift; sourceTree = "<group>"; };
+		092591BC2503F45B00034515 /* LocationPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerScreen.swift; sourceTree = "<group>"; };
+		092591C22503F47C00034515 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		092591C82503F50300034515 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
+		092591CA2503F5D200034515 /* LocationPickerViewController+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationPickerViewController+ContentView.swift"; sourceTree = "<group>"; };
+		092591CC2503F66D00034515 /* LocationPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewModel.swift; sourceTree = "<group>"; };
+		092591CE2503F68700034515 /* DefaultLocationPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLocationPickerViewModel.swift; sourceTree = "<group>"; };
+		092591D02503F6B400034515 /* LocationPickerScreenEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerScreenEvents.swift; sourceTree = "<group>"; };
+		092591D22503F6F200034515 /* LocationPickerEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerEvents.swift; sourceTree = "<group>"; };
+		092591D42503F71800034515 /* DefaultLocationPickerEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLocationPickerEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +189,7 @@
 			files = (
 				09259100250383EF00034515 /* Utilities.framework in Frameworks */,
 				0925910C2503870D00034515 /* WeatherKit.framework in Frameworks */,
+				092591C32503F47C00034515 /* Resources.framework in Frameworks */,
 				092591902503AC8B00034515 /* DomainModels.framework in Frameworks */,
 				0925918D2503AC8600034515 /* DataRepository.framework in Frameworks */,
 				09259104250383F300034515 /* ViewLayout.framework in Frameworks */,
@@ -305,6 +326,7 @@
 		092590542503781200034515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				092591C22503F47C00034515 /* Resources.framework */,
 				0925918F2503AC8B00034515 /* DomainModels.framework */,
 				0925918C2503AC8600034515 /* DataRepository.framework */,
 				0925914C25039EAA00034515 /* Extensions.framework */,
@@ -337,11 +359,8 @@
 		092590AA250379B400034515 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				092590AF250379ED00034515 /* DashboardScreen.swift */,
-				092590B4250379FC00034515 /* Events */,
-				092590B525037A0100034515 /* Model */,
-				092590B1250379EF00034515 /* View */,
-				092590B3250379F800034515 /* ViewModel */,
+				092591BB2503F44500034515 /* LocationPicker */,
+				092591BA2503F43900034515 /* Dashboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -422,6 +441,57 @@
 				092591AE2503DC8A00034515 /* LocalizationService.swift */,
 			);
 			path = LocalizationService;
+			sourceTree = "<group>";
+		};
+		092591BA2503F43900034515 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				092590AF250379ED00034515 /* DashboardScreen.swift */,
+				092590B4250379FC00034515 /* Events */,
+				092590B525037A0100034515 /* Model */,
+				092590B1250379EF00034515 /* View */,
+				092590B3250379F800034515 /* ViewModel */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		092591BB2503F44500034515 /* LocationPicker */ = {
+			isa = PBXGroup;
+			children = (
+				092591BC2503F45B00034515 /* LocationPickerScreen.swift */,
+				092591C12503F47100034515 /* Events */,
+				092591BF2503F46A00034515 /* View */,
+				092591BE2503F46400034515 /* ViewModel */,
+			);
+			path = LocationPicker;
+			sourceTree = "<group>";
+		};
+		092591BE2503F46400034515 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				092591CE2503F68700034515 /* DefaultLocationPickerViewModel.swift */,
+				092591CC2503F66D00034515 /* LocationPickerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		092591BF2503F46A00034515 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				092591C82503F50300034515 /* LocationPickerViewController.swift */,
+				092591CA2503F5D200034515 /* LocationPickerViewController+ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		092591C12503F47100034515 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				092591D42503F71800034515 /* DefaultLocationPickerEvents.swift */,
+				092591D22503F6F200034515 /* LocationPickerEvents.swift */,
+				092591D02503F6B400034515 /* LocationPickerScreenEvents.swift */,
+			);
+			path = Events;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,17 +699,25 @@
 				092590BA25037B8C00034515 /* ForecastProjection.swift in Sources */,
 				092591AF2503DC8A00034515 /* LocalizationService.swift in Sources */,
 				092590D12503800600034515 /* DashboardModel.swift in Sources */,
+				092591D12503F6B400034515 /* LocationPickerScreenEvents.swift in Sources */,
 				092590B0250379ED00034515 /* DashboardScreen.swift in Sources */,
 				092590C925037E4B00034515 /* DashboardViewController.swift in Sources */,
+				092591D32503F6F200034515 /* LocationPickerEvents.swift in Sources */,
 				092590CF25037FF900034515 /* DefaultDashboardViewModel.swift in Sources */,
+				092591CB2503F5D200034515 /* LocationPickerViewController+ContentView.swift in Sources */,
+				092591C92503F50300034515 /* LocationPickerViewController.swift in Sources */,
 				092590B825037B4700034515 /* ViewContent.swift in Sources */,
 				092590CB25037E5500034515 /* DashboardViewController+ContentView.swift in Sources */,
 				092591B12503E98A00034515 /* DashboardScreenEvents.swift in Sources */,
+				092591D52503F71800034515 /* DefaultLocationPickerEvents.swift in Sources */,
 				092591B52503E99B00034515 /* DefaultDashboardEvents.swift in Sources */,
 				092590AC250379D400034515 /* DashboardFlow.swift in Sources */,
 				092591B32503E99200034515 /* DashboardEvents.swift in Sources */,
 				092590D32503800F00034515 /* DefaultDashboardModel.swift in Sources */,
+				092591CD2503F66D00034515 /* LocationPickerViewModel.swift in Sources */,
+				092591BD2503F45B00034515 /* LocationPickerScreen.swift in Sources */,
 				092590CD25037FE800034515 /* DashboardViewModel.swift in Sources */,
+				092591CF2503F68700034515 /* DefaultLocationPickerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

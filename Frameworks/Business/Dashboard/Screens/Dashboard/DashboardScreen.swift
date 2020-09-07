@@ -18,16 +18,23 @@ final class DashboardScreen: Screen {
     let events: DashboardScreenEvents
     let viewController: UIViewController
     
+    private let viewModel: DashboardViewModel
+    
     // MARK: - Initializers
     
     init(repository: WeatherRepository) {
         let events = DefaultDashboardEvents()
         let model = DefaultDashboardModel(repository: repository, locale: .current)
-        let viewModel = DefaultDashboardViewModel(model: model, mapper: DomainToInterfaceMapper(), events: events)
         
+        viewModel = DefaultDashboardViewModel(model: model, mapper: DomainToInterfaceMapper(), events: events)
         self.events = events
-        
         viewController = DashboardViewController(using: viewModel)
+    }
+    
+    // MARK: - API
+    
+    func getForecast(for city: String) {
+        viewModel.getForecast(for: city)
     }
     
 }

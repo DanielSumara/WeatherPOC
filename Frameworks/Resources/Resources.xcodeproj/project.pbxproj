@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0904FF3E25010A0E00F1A5B5 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 0904FF3C25010A0E00F1A5B5 /* Resources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		092591C72503F49C00034515 /* ResourcesBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591C62503F49C00034515 /* ResourcesBundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0904FF3925010A0E00F1A5B5 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0904FF3C25010A0E00F1A5B5 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
 		0904FF3D25010A0E00F1A5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		092591C62503F49C00034515 /* ResourcesBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesBundle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,27 @@
 		0904FF3B25010A0E00F1A5B5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				092591C52503F48E00034515 /* Infrastructure */,
+				092591B62503F3EB00034515 /* SupportingFiles */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		092591B62503F3EB00034515 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				0904FF3C25010A0E00F1A5B5 /* Resources.h */,
 				0904FF3D25010A0E00F1A5B5 /* Info.plist */,
 			);
-			path = Resources;
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		092591C52503F48E00034515 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				092591C62503F49C00034515 /* ResourcesBundle.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +114,7 @@
 				TargetAttributes = {
 					0904FF3825010A0E00F1A5B5 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -131,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092591C72503F49C00034515 /* ResourcesBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +281,7 @@
 		0904FF4225010A0E00F1A5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -276,6 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.Resources;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +307,7 @@
 		0904FF4325010A0E00F1A5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;

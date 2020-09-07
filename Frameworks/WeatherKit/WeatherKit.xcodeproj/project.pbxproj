@@ -20,6 +20,10 @@
 		092591A82503CFF700034515 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591A72503CFF700034515 /* Utilities.framework */; };
 		092591A92503CFF700034515 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591A72503CFF700034515 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092591AC2503D3E600034515 /* SelectableImageBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591AB2503D3E600034515 /* SelectableImageBarButtonItem.swift */; };
+		092591D82503F87000034515 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591D72503F87000034515 /* PrimaryButton.swift */; };
+		092591DB2503F93900034515 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591DA2503F93900034515 /* TextInput.swift */; };
+		092591DD2503F9E900034515 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591DC2503F9E900034515 /* Extensions.framework */; };
+		092591DE2503F9E900034515 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591DC2503F9E900034515 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				092591DE2503F9E900034515 /* Extensions.framework in Embed Frameworks */,
 				092591A92503CFF700034515 /* Utilities.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -62,6 +67,9 @@
 		092591A42503CFE000034515 /* ImageBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBarButtonItem.swift; sourceTree = "<group>"; };
 		092591A72503CFF700034515 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		092591AB2503D3E600034515 /* SelectableImageBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableImageBarButtonItem.swift; sourceTree = "<group>"; };
+		092591D72503F87000034515 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		092591DA2503F93900034515 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		092591DC2503F9E900034515 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092591DD2503F9E900034515 /* Extensions.framework in Frameworks */,
 				092591A82503CFF700034515 /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,8 +116,10 @@
 			isa = PBXGroup;
 			children = (
 				092591A32503CFCD00034515 /* BarButtonItems */,
+				092591D62503F85A00034515 /* Buttons */,
 				092591962503B89900034515 /* Controls */,
 				0925919D2503C44B00034515 /* ImageView */,
+				092591D92503F92600034515 /* Inputs */,
 				09259108250386D500034515 /* Labels */,
 				092591A02503C65900034515 /* Separators */,
 				09259106250386BE00034515 /* SupportingFiles */,
@@ -180,9 +191,26 @@
 		092591A62503CFF700034515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				092591DC2503F9E900034515 /* Extensions.framework */,
 				092591A72503CFF700034515 /* Utilities.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		092591D62503F85A00034515 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				092591D72503F87000034515 /* PrimaryButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		092591D92503F92600034515 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				092591DA2503F93900034515 /* TextInput.swift */,
+			);
+			path = Inputs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +324,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092591D82503F87000034515 /* PrimaryButton.swift in Sources */,
 				092591A52503CFE000034515 /* ImageBarButtonItem.swift in Sources */,
 				0925919F2503C45B00034515 /* IconView.swift in Sources */,
+				092591DB2503F93900034515 /* TextInput.swift in Sources */,
 				0925919C2503B8CC00034515 /* BodyLabel.swift in Sources */,
 				0925910A250386F100034515 /* TitleLabel.swift in Sources */,
 				092591AC2503D3E600034515 /* SelectableImageBarButtonItem.swift in Sources */,

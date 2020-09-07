@@ -13,11 +13,8 @@
 		092590BE25037BE000034515 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590BD25037BE000034515 /* AppCoordinator.swift */; };
 		092590C125037BFD00034515 /* Dashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092590C025037BFD00034515 /* Dashboard.framework */; };
 		092590C525037C3500034515 /* Business.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092590C425037C3500034515 /* Business.framework */; };
-		092590C625037C3500034515 /* Business.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092590C425037C3500034515 /* Business.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092591882503AC6100034515 /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591862503AC6100034515 /* DataRepository.framework */; };
-		092591892503AC6100034515 /* DataRepository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591862503AC6100034515 /* DataRepository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0925918A2503AC6100034515 /* RestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591872503AC6100034515 /* RestService.framework */; };
-		0925918B2503AC6100034515 /* RestService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591872503AC6100034515 /* RestService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,22 +26,6 @@
 			remoteInfo = WeatherFlow;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		092590C725037C3500034515 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				092591892503AC6100034515 /* DataRepository.framework in Embed Frameworks */,
-				0925918B2503AC6100034515 /* RestService.framework in Embed Frameworks */,
-				092590C625037C3500034515 /* Business.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0904FFAB25010A8100F1A5B5 /* WeatherFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,7 +151,6 @@
 				0904FFA725010A8100F1A5B5 /* Sources */,
 				0904FFA825010A8100F1A5B5 /* Frameworks */,
 				0904FFA925010A8100F1A5B5 /* Resources */,
-				092590C725037C3500034515 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

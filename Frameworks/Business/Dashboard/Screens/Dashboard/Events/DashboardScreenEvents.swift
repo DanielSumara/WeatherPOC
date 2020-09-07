@@ -15,5 +15,6 @@ protocol DashboardScreenEvents: AnyObject {
     
     var errorOccurred: Observable<Error> { get }
     var searchTapped: Observable<Void> { get }
+    var pickCityTapped: Observable<Void> { get }
     
 }

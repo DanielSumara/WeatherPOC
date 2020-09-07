@@ -14,5 +14,6 @@ protocol DashboardEvents: AnyObject {
     
     func report(_ error: Error)
     func invokeSearch()
+    func pickCity()
     
 }

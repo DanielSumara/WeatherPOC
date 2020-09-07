@@ -64,6 +64,7 @@ final class DefaultDashboardViewModel: DashboardViewModel {
     func getForecast(for city: String) {
         _title.notify(using: "Getting forecast")
         _place.notify(using: city)
+        _isFavorite.notify(using: model.favoriteState(for: city))
         _content.notify(using: .loading)
         
         model.getForecast(for: city) { [weak self, _title, _content, mapper, events] result in
@@ -80,8 +81,12 @@ final class DefaultDashboardViewModel: DashboardViewModel {
     
     func toggleFavorite() {
         switch _isFavorite.value {
-        case true: _isFavorite.notify(using: false)
-        case false: _isFavorite.notify(using: true)
+        case true:
+            model.unfavorite(place: _place.value)
+            _isFavorite.notify(using: false)
+        case false:
+            model.favorite(place: _place.value)
+            _isFavorite.notify(using: true)
         }
     }
     
@@ -102,6 +107,10 @@ final class DefaultDashboardViewModel: DashboardViewModel {
         events.invokeSearch()
     }
     
+    func pickCity() {
+        events.pickCity()
+    }
+    
     // MARK: - Actions
     
     private func getCoordinates() {
@@ -111,12 +120,13 @@ final class DefaultDashboardViewModel: DashboardViewModel {
     }
     
     private func getForecastFor(longitude: Double, latitude: Double) {
-        model.getForecast(latitude: latitude, longitude: longitude) { [_title, _content, _place, mapper, events] result in
+        model.getForecast(latitude: latitude, longitude: longitude) { [_title, _content, _place, mapper, events, _isFavorite, model] result in
             switch result {
             case let .success(forecast):
                 _title.notify(using: "Forecast")
                 _place.notify(using: forecast.name)
                 _content.notify(using: .weather(mapper.projection(form: forecast)))
+                _isFavorite.notify(using: model.favoriteState(for: forecast.name))
             case let .failure(error): events.report(error)
             }
         }

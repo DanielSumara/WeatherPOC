@@ -14,13 +14,9 @@
 		092591712503A83100034515 /* TransportToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591702503A83100034515 /* TransportToDomainMapper.swift */; };
 		092591732503A83C00034515 /* DefaultTransportToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591722503A83C00034515 /* DefaultTransportToDomainMapper.swift */; };
 		092591792503A89B00034515 /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591752503A89B00034515 /* DomainModels.framework */; };
-		0925917A2503A89B00034515 /* DomainModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591752503A89B00034515 /* DomainModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0925917B2503A89B00034515 /* RestModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591762503A89B00034515 /* RestModels.framework */; };
-		0925917C2503A89B00034515 /* RestModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591762503A89B00034515 /* RestModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0925917D2503A89B00034515 /* RestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591772503A89B00034515 /* RestService.framework */; };
-		0925917E2503A89B00034515 /* RestService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591772503A89B00034515 /* RestService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0925917F2503A89B00034515 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591782503A89B00034515 /* Extensions.framework */; };
-		092591802503A89B00034515 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591782503A89B00034515 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092591832503AA6600034515 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591822503AA6600034515 /* WeatherRepository.swift */; };
 		092591852503AA8E00034515 /* DefaultWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591842503AA8E00034515 /* DefaultWeatherRepository.swift */; };
 /* End PBXBuildFile section */
@@ -34,23 +30,6 @@
 			remoteInfo = DataRepository;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		092591812503A89C00034515 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				092591802503A89B00034515 /* Extensions.framework in Embed Frameworks */,
-				0925917C2503A89B00034515 /* RestModels.framework in Embed Frameworks */,
-				0925917E2503A89B00034515 /* RestService.framework in Embed Frameworks */,
-				0925917A2503A89B00034515 /* DomainModels.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0904FF6325010A4100F1A5B5 /* DataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,7 +179,6 @@
 				0904FF5F25010A4100F1A5B5 /* Sources */,
 				0904FF6025010A4100F1A5B5 /* Frameworks */,
 				0904FF6125010A4100F1A5B5 /* Resources */,
-				092591812503A89C00034515 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

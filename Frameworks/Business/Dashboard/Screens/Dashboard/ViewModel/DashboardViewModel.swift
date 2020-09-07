@@ -26,6 +26,7 @@ protocol DashboardViewModel: AnyObject {
     func toggleFavorite()
     func getForecastForUserLocation()
     
-    func startSearch() 
+    func startSearch()
+    func pickCity()
     
 }

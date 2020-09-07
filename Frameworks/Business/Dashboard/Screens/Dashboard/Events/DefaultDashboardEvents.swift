@@ -15,17 +15,20 @@ final class DefaultDashboardEvents: DashboardScreenEvents, DashboardEvents {
     
     let errorOccurred: Observable<Error>
     let searchTapped: Observable<Void>
+    let pickCityTapped: Observable<Void>
     
     // MARK: - Properties
     
     private let _errorOccurred = EventEmitter<Error>()
     private let _searchTapped = EventEmitter<Void>()
+    private let _pickCityTapped = EventEmitter<Void>()
     
     // MARK: - Initializers
     
     init() {
         errorOccurred = _errorOccurred.asObservable()
         searchTapped = _searchTapped.asObservable()
+        pickCityTapped = _pickCityTapped.asObservable()
     }
     
     // MARK: - API
@@ -36,6 +39,10 @@ final class DefaultDashboardEvents: DashboardScreenEvents, DashboardEvents {
     
     func invokeSearch() {
         _searchTapped.notify(using: ())
+    }
+    
+    func pickCity() {
+        _pickCityTapped.notify(using: ())
     }
     
 }

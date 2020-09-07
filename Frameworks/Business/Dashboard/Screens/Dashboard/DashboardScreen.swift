@@ -22,9 +22,9 @@ final class DashboardScreen: Screen {
     
     // MARK: - Initializers
     
-    init(repository: WeatherRepository) {
+    init(repository: WeatherRepository, placesStore: PlacesStore) {
         let events = DefaultDashboardEvents()
-        let model = DefaultDashboardModel(repository: repository, locale: .current)
+        let model = DefaultDashboardModel(repository: repository, favoritesStore: placesStore, locale: .current)
         
         viewModel = DefaultDashboardViewModel(model: model, mapper: DomainToInterfaceMapper(), events: events)
         self.events = events

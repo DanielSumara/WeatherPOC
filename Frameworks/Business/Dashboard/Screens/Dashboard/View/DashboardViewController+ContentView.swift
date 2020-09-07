@@ -102,7 +102,7 @@ extension DashboardViewController {
             windSpeedLabel.set(title: "Wind speed")
             windSpeedLabel.set(icon: UIImage(systemName: "wind", withConfiguration: parameterConfiguration))
             rainLabel.set(title: "Rain")
-            rainLabel.set(icon: UIImage(systemName: "rain", withConfiguration: parameterConfiguration))
+            rainLabel.set(icon: UIImage(systemName: "cloud.rain", withConfiguration: parameterConfiguration))
             snowLabel.set(title: "Snow")
             snowLabel.set(icon: UIImage(systemName: "snow", withConfiguration: parameterConfiguration))
             

@@ -15,6 +15,7 @@ final class DashboardViewController: UIViewController {
     // MARK: - Properties
     
     private let contentView = ContentView()
+    private let placesButton = ImageBarButton()
     private let favoritesButton = SelectableImageBarButton()
     private let searchButton = ImageBarButton()
     private let locationButton = ImageBarButton()
@@ -61,9 +62,11 @@ final class DashboardViewController: UIViewController {
         favoritesButton.tapped.observe(on: self) { [viewModel] _, _ in viewModel.toggleFavorite() }
         locationButton.tapped.observe(on: self) { [viewModel] _, _ in viewModel.getForecastForUserLocation() }
         searchButton.tapped.observe(on: self) { [viewModel] _, _ in viewModel.startSearch() }
+        placesButton.tapped.observe(on: self) { [viewModel] _, _ in viewModel.pickCity() }
     }
     
     private func setupComponents() {
+        placesButton.set(image: UIImage(systemName: "list.bullet"))
         favoritesButton.set(image: UIImage(systemName: "suit.heart"))
         favoritesButton.set(selectedImage: UIImage(systemName: "suit.heart.fill"))
         searchButton.set(image: UIImage(systemName: "magnifyingglass"))
@@ -76,8 +79,12 @@ final class DashboardViewController: UIViewController {
         contentView.set(content: content)
         
         switch content {
-        case .loading: navigationItem.rightBarButtonItems = nil
-        case .weather: navigationItem.rightBarButtonItems = [locationButton, searchButton, favoritesButton]
+        case .loading:
+            navigationItem.leftBarButtonItem = nil
+            navigationItem.rightBarButtonItems = nil
+        case .weather:
+            navigationItem.leftBarButtonItem = placesButton
+            navigationItem.rightBarButtonItems = [locationButton, searchButton, favoritesButton]
         }
     }
     

@@ -15,11 +15,12 @@ public final class DashboardFlow: ModuleFlow {
     
     // MARK: - Properties
     
+    private let placesStore: PlacesStore = UserDefaultsPlacesStore()
+    
     private let presenter: Presenter
     private let repository: WeatherRepository
     
-    private lazy var screen = DashboardScreen(repository: repository)
-    private var modalScreen: Screen?
+    private lazy var screen = DashboardScreen(repository: repository, placesStore: placesStore)
     
     // MARK: - Initializers
     
@@ -33,6 +34,7 @@ public final class DashboardFlow: ModuleFlow {
     public func start() {
         screen.events.errorOccurred.observe(on: self) { flow, error in flow.show(error) }
         screen.events.searchTapped.observe(on: self) { flow, _ in flow.showCityPicker() }
+        screen.events.pickCityTapped.observe(on: self) { (flow, _) in flow.showCitiesList() }
         
         presenter.push(screen)
     }
@@ -44,6 +46,19 @@ public final class DashboardFlow: ModuleFlow {
     private func showCityPicker() {
         let screen = LocationPickerScreen()
         screen.events.cityPicked.observe(on: self.screen) { screen, city in
+            screen.getForecast(for: city)
+            screen.viewController.dismiss(animated: true)
+        }
+        
+        let presenter = DefaultPresenter()
+        presenter.push(screen)
+        
+        self.presenter.present(presenter.viewController)
+    }
+    
+    private func showCitiesList() {
+        let screen = PlacesListScreen(placesStore: placesStore)
+        screen.events.placePicked.observe(on: self.screen) { screen, city in
             screen.getForecast(for: city)
             screen.viewController.dismiss(animated: true)
         }

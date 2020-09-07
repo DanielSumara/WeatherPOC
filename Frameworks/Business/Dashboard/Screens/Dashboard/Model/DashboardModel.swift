@@ -25,4 +25,9 @@ protocol DashboardModel: AnyObject {
     func askForLocalization(completion: @escaping (Bool) -> Void)
     func getCoordinates(then: @escaping (Coordinates) -> Void)
     
+    func favoriteState(for place: String) -> Bool
+    
+    func unfavorite(place: String)
+    func favorite(place: String)
+    
 }

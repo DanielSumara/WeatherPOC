@@ -18,12 +18,10 @@
 		092591A22503C6C300034515 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591A12503C6C300034515 /* Separator.swift */; };
 		092591A52503CFE000034515 /* ImageBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591A42503CFE000034515 /* ImageBarButtonItem.swift */; };
 		092591A82503CFF700034515 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591A72503CFF700034515 /* Utilities.framework */; };
-		092591A92503CFF700034515 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591A72503CFF700034515 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092591AC2503D3E600034515 /* SelectableImageBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591AB2503D3E600034515 /* SelectableImageBarButtonItem.swift */; };
 		092591D82503F87000034515 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591D72503F87000034515 /* PrimaryButton.swift */; };
 		092591DB2503F93900034515 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591DA2503F93900034515 /* TextInput.swift */; };
 		092591DD2503F9E900034515 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591DC2503F9E900034515 /* Extensions.framework */; };
-		092591DE2503F9E900034515 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591DC2503F9E900034515 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,21 +33,6 @@
 			remoteInfo = WeatherKit;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		092591AA2503CFF800034515 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				092591DE2503F9E900034515 /* Extensions.framework in Embed Frameworks */,
-				092591A92503CFF700034515 /* Utilities.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0904FF8725010A5B00F1A5B5 /* WeatherKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,7 +218,6 @@
 				0904FF8325010A5B00F1A5B5 /* Sources */,
 				0904FF8425010A5B00F1A5B5 /* Frameworks */,
 				0904FF8525010A5B00F1A5B5 /* Resources */,
-				092591AA2503CFF800034515 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

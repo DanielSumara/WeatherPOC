@@ -31,17 +31,11 @@
 		092590D12503800600034515 /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590D02503800600034515 /* DashboardModel.swift */; };
 		092590D32503800F00034515 /* DefaultDashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092590D22503800F00034515 /* DefaultDashboardModel.swift */; };
 		09259100250383EF00034515 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092590FF250383EF00034515 /* Utilities.framework */; };
-		09259101250383EF00034515 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092590FF250383EF00034515 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		09259104250383F300034515 /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09259103250383F300034515 /* ViewLayout.framework */; };
-		09259105250383F300034515 /* ViewLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09259103250383F300034515 /* ViewLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0925910C2503870D00034515 /* WeatherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0925910B2503870D00034515 /* WeatherKit.framework */; };
-		0925910D2503870D00034515 /* WeatherKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925910B2503870D00034515 /* WeatherKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0925914D25039EAA00034515 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0925914C25039EAA00034515 /* Extensions.framework */; };
-		0925914E25039EAA00034515 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925914C25039EAA00034515 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0925918D2503AC8600034515 /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918C2503AC8600034515 /* DataRepository.framework */; };
-		0925918E2503AC8600034515 /* DataRepository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918C2503AC8600034515 /* DataRepository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092591902503AC8B00034515 /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918F2503AC8B00034515 /* DomainModels.framework */; };
-		092591912503AC8B00034515 /* DomainModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0925918F2503AC8B00034515 /* DomainModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092591942503B2B400034515 /* DomainToInterfaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591932503B2B400034515 /* DomainToInterfaceMapper.swift */; };
 		092591AF2503DC8A00034515 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591AE2503DC8A00034515 /* LocalizationService.swift */; };
 		092591B12503E98A00034515 /* DashboardScreenEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591B02503E98A00034515 /* DashboardScreenEvents.swift */; };
@@ -49,7 +43,6 @@
 		092591B52503E99B00034515 /* DefaultDashboardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591B42503E99B00034515 /* DefaultDashboardEvents.swift */; };
 		092591BD2503F45B00034515 /* LocationPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591BC2503F45B00034515 /* LocationPickerScreen.swift */; };
 		092591C32503F47C00034515 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092591C22503F47C00034515 /* Resources.framework */; };
-		092591C42503F47C00034515 /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092591C22503F47C00034515 /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092591C92503F50300034515 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591C82503F50300034515 /* LocationPickerViewController.swift */; };
 		092591CB2503F5D200034515 /* LocationPickerViewController+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591CA2503F5D200034515 /* LocationPickerViewController+ContentView.swift */; };
 		092591CD2503F66D00034515 /* LocationPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591CC2503F66D00034515 /* LocationPickerViewModel.swift */; };
@@ -57,6 +50,18 @@
 		092591D12503F6B400034515 /* LocationPickerScreenEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591D02503F6B400034515 /* LocationPickerScreenEvents.swift */; };
 		092591D32503F6F200034515 /* LocationPickerEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591D22503F6F200034515 /* LocationPickerEvents.swift */; };
 		092591D52503F71800034515 /* DefaultLocationPickerEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092591D42503F71800034515 /* DefaultLocationPickerEvents.swift */; };
+		098DB1352506169F0024E456 /* PlacesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB1342506169F0024E456 /* PlacesStore.swift */; };
+		098DB137250616A90024E456 /* UserDefaultsPlacesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB136250616A90024E456 /* UserDefaultsPlacesStore.swift */; };
+		098DB13A250620B90024E456 /* PlacesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB139250620B90024E456 /* PlacesListScreen.swift */; };
+		098DB1402506211B0024E456 /* PlacesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB13F2506211B0024E456 /* PlacesListViewController.swift */; };
+		098DB142250621240024E456 /* PlacesListViewController+ListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB141250621240024E456 /* PlacesListViewController+ListAdapter.swift */; };
+		098DB144250622D20024E456 /* PlacesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB143250622D20024E456 /* PlacesListViewModel.swift */; };
+		098DB146250623C70024E456 /* PlacesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB145250623C70024E456 /* PlacesListModel.swift */; };
+		098DB148250623F20024E456 /* DefaultPlacesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB147250623F20024E456 /* DefaultPlacesListModel.swift */; };
+		098DB14A250624470024E456 /* DefaultPlacesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB149250624470024E456 /* DefaultPlacesListViewModel.swift */; };
+		098DB14C250624950024E456 /* PlacesListScreenEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB14B250624950024E456 /* PlacesListScreenEvents.swift */; };
+		098DB14E2506249B0024E456 /* PlacesListEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB14D2506249B0024E456 /* PlacesListEvents.swift */; };
+		098DB150250624A20024E456 /* DefaultPlacesListEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098DB14F250624A20024E456 /* DefaultPlacesListEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,36 +87,6 @@
 			remoteInfo = Business;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		09259102250383EF00034515 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				09259101250383EF00034515 /* Utilities.framework in Embed Frameworks */,
-				0925910D2503870D00034515 /* WeatherKit.framework in Embed Frameworks */,
-				092591C42503F47C00034515 /* Resources.framework in Embed Frameworks */,
-				092591912503AC8B00034515 /* DomainModels.framework in Embed Frameworks */,
-				0925918E2503AC8600034515 /* DataRepository.framework in Embed Frameworks */,
-				09259105250383F300034515 /* ViewLayout.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0925914F25039EAA00034515 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0925914E25039EAA00034515 /* Extensions.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0904FFCF25010AA300F1A5B5 /* Business.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Business.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +138,18 @@
 		092591D02503F6B400034515 /* LocationPickerScreenEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerScreenEvents.swift; sourceTree = "<group>"; };
 		092591D22503F6F200034515 /* LocationPickerEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerEvents.swift; sourceTree = "<group>"; };
 		092591D42503F71800034515 /* DefaultLocationPickerEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLocationPickerEvents.swift; sourceTree = "<group>"; };
+		098DB1342506169F0024E456 /* PlacesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesStore.swift; sourceTree = "<group>"; };
+		098DB136250616A90024E456 /* UserDefaultsPlacesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPlacesStore.swift; sourceTree = "<group>"; };
+		098DB139250620B90024E456 /* PlacesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListScreen.swift; sourceTree = "<group>"; };
+		098DB13F2506211B0024E456 /* PlacesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListViewController.swift; sourceTree = "<group>"; };
+		098DB141250621240024E456 /* PlacesListViewController+ListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesListViewController+ListAdapter.swift"; sourceTree = "<group>"; };
+		098DB143250622D20024E456 /* PlacesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListViewModel.swift; sourceTree = "<group>"; };
+		098DB145250623C70024E456 /* PlacesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListModel.swift; sourceTree = "<group>"; };
+		098DB147250623F20024E456 /* DefaultPlacesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPlacesListModel.swift; sourceTree = "<group>"; };
+		098DB149250624470024E456 /* DefaultPlacesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPlacesListViewModel.swift; sourceTree = "<group>"; };
+		098DB14B250624950024E456 /* PlacesListScreenEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListScreenEvents.swift; sourceTree = "<group>"; };
+		098DB14D2506249B0024E456 /* PlacesListEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListEvents.swift; sourceTree = "<group>"; };
+		098DB14F250624A20024E456 /* DefaultPlacesListEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPlacesListEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +222,7 @@
 			children = (
 				092590442503770F00034515 /* Contracts */,
 				092590492503776B00034515 /* Infrastructure */,
+				098DB133250616790024E456 /* Services */,
 				092590262503769200034515 /* SupportingFiles */,
 			);
 			path = Business;
@@ -359,6 +347,7 @@
 		092590AA250379B400034515 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				098DB138250620AD0024E456 /* PlacesList */,
 				092591BB2503F44500034515 /* LocationPicker */,
 				092591BA2503F43900034515 /* Dashboard */,
 			);
@@ -494,6 +483,64 @@
 			path = Events;
 			sourceTree = "<group>";
 		};
+		098DB133250616790024E456 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				098DB1342506169F0024E456 /* PlacesStore.swift */,
+				098DB136250616A90024E456 /* UserDefaultsPlacesStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		098DB138250620AD0024E456 /* PlacesList */ = {
+			isa = PBXGroup;
+			children = (
+				098DB139250620B90024E456 /* PlacesListScreen.swift */,
+				098DB13E250620D20024E456 /* Events */,
+				098DB13D250620CF0024E456 /* Model */,
+				098DB13B250620C80024E456 /* View */,
+				098DB13C250620CA0024E456 /* ViewModel */,
+			);
+			path = PlacesList;
+			sourceTree = "<group>";
+		};
+		098DB13B250620C80024E456 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				098DB13F2506211B0024E456 /* PlacesListViewController.swift */,
+				098DB141250621240024E456 /* PlacesListViewController+ListAdapter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		098DB13C250620CA0024E456 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				098DB143250622D20024E456 /* PlacesListViewModel.swift */,
+				098DB149250624470024E456 /* DefaultPlacesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		098DB13D250620CF0024E456 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				098DB147250623F20024E456 /* DefaultPlacesListModel.swift */,
+				098DB145250623C70024E456 /* PlacesListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		098DB13E250620D20024E456 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				098DB14F250624A20024E456 /* DefaultPlacesListEvents.swift */,
+				098DB14D2506249B0024E456 /* PlacesListEvents.swift */,
+				098DB14B250624950024E456 /* PlacesListScreenEvents.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -524,7 +571,6 @@
 				0904FFCB25010AA300F1A5B5 /* Sources */,
 				0904FFCC25010AA300F1A5B5 /* Frameworks */,
 				0904FFCD25010AA300F1A5B5 /* Resources */,
-				0925914F25039EAA00034515 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -561,7 +607,6 @@
 				09259028250376BC00034515 /* Sources */,
 				09259029250376BC00034515 /* Frameworks */,
 				0925902A250376BC00034515 /* Resources */,
-				09259102250383EF00034515 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -679,6 +724,8 @@
 				092590462503773200034515 /* ModuleFlow.swift in Sources */,
 				0925904F2503779A00034515 /* DefaultPresenter.swift in Sources */,
 				092590482503773A00034515 /* Screen.swift in Sources */,
+				098DB137250616A90024E456 /* UserDefaultsPlacesStore.swift in Sources */,
+				098DB1352506169F0024E456 /* PlacesStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,22 +744,32 @@
 			files = (
 				092591942503B2B400034515 /* DomainToInterfaceMapper.swift in Sources */,
 				092590BA25037B8C00034515 /* ForecastProjection.swift in Sources */,
+				098DB148250623F20024E456 /* DefaultPlacesListModel.swift in Sources */,
 				092591AF2503DC8A00034515 /* LocalizationService.swift in Sources */,
 				092590D12503800600034515 /* DashboardModel.swift in Sources */,
 				092591D12503F6B400034515 /* LocationPickerScreenEvents.swift in Sources */,
 				092590B0250379ED00034515 /* DashboardScreen.swift in Sources */,
 				092590C925037E4B00034515 /* DashboardViewController.swift in Sources */,
+				098DB13A250620B90024E456 /* PlacesListScreen.swift in Sources */,
 				092591D32503F6F200034515 /* LocationPickerEvents.swift in Sources */,
 				092590CF25037FF900034515 /* DefaultDashboardViewModel.swift in Sources */,
 				092591CB2503F5D200034515 /* LocationPickerViewController+ContentView.swift in Sources */,
 				092591C92503F50300034515 /* LocationPickerViewController.swift in Sources */,
+				098DB14C250624950024E456 /* PlacesListScreenEvents.swift in Sources */,
 				092590B825037B4700034515 /* ViewContent.swift in Sources */,
+				098DB146250623C70024E456 /* PlacesListModel.swift in Sources */,
 				092590CB25037E5500034515 /* DashboardViewController+ContentView.swift in Sources */,
 				092591B12503E98A00034515 /* DashboardScreenEvents.swift in Sources */,
 				092591D52503F71800034515 /* DefaultLocationPickerEvents.swift in Sources */,
 				092591B52503E99B00034515 /* DefaultDashboardEvents.swift in Sources */,
 				092590AC250379D400034515 /* DashboardFlow.swift in Sources */,
+				098DB142250621240024E456 /* PlacesListViewController+ListAdapter.swift in Sources */,
+				098DB150250624A20024E456 /* DefaultPlacesListEvents.swift in Sources */,
+				098DB144250622D20024E456 /* PlacesListViewModel.swift in Sources */,
+				098DB14A250624470024E456 /* DefaultPlacesListViewModel.swift in Sources */,
+				098DB1402506211B0024E456 /* PlacesListViewController.swift in Sources */,
 				092591B32503E99200034515 /* DashboardEvents.swift in Sources */,
+				098DB14E2506249B0024E456 /* PlacesListEvents.swift in Sources */,
 				092590D32503800F00034515 /* DefaultDashboardModel.swift in Sources */,
 				092591CD2503F66D00034515 /* LocationPickerViewModel.swift in Sources */,
 				092591BD2503F45B00034515 /* LocationPickerScreen.swift in Sources */,
